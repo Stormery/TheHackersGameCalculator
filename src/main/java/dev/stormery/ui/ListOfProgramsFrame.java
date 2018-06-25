@@ -28,8 +28,7 @@ public class ListOfProgramsFrame extends JFrame{
 
         initComponents();
         addComponents();
-        addDummyPrograms("Beam", 1, 20.0, 1.0, 1.0, 1);
-
+        addDummyPrograms();
 
 
         pack();
@@ -82,9 +81,11 @@ public class ListOfProgramsFrame extends JFrame{
 
     }
 
-    private void addDummyPrograms(String name, Integer diskSpace, Double compilationTime, Double installTime, Double delay, Integer programLevel){
+    private void addDummyPrograms(){
         colNames = table.getColumnNames();
-        Object[][] data = {{name,diskSpace,compilationTime,installTime,delay,programLevel,0,0,0},{"Worm", 2,0.2,0.2,0.2,1,0,0,0}};
+        Object[][] data = {
+                {"Beam",1,20.0,1.0,1.0,0,0,0},
+                {"Worm", 2,0.2,0.2,0.2,1,0,0,0}};
 
         tableWithListOfPrograms = new JTable(data,colNames);
         scrollPane.getViewport().add(tableWithListOfPrograms);
