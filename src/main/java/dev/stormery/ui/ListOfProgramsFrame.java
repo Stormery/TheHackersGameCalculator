@@ -3,10 +3,8 @@ package dev.stormery.ui;
 import dev.stormery.model.Programs;
 
 import javax.swing.*;
-import javax.swing.table.DefaultTableModel;
 import javax.swing.table.TableColumn;
 import java.awt.*;
-import java.util.ArrayList;
 import java.util.List;
 
 /**
@@ -38,7 +36,7 @@ public class ListOfProgramsFrame extends JFrame{
         setLocationRelativeTo(null);
         setResizable(true);
         setDefaultCloseOperation(EXIT_ON_CLOSE);
-        setSize(900, 500);
+        setSize(950, 500);
         setVisible(true);
     }
 
@@ -68,15 +66,14 @@ public class ListOfProgramsFrame extends JFrame{
         bttRefreshList.setActionCommand("refreshProgramAction");
 
 
-
     }
 
     /**
      * Add initialized components to GUI panel
      */
     private void addComponents() {
-        add(scrollPane);
         JPanel panel = new JPanel();
+        add(scrollPane);
         panel.add(bttAddProgram);
         panel.add(bttFindProgram);
         panel.add(bttRefreshList);
@@ -85,16 +82,13 @@ public class ListOfProgramsFrame extends JFrame{
 
     }
 
-    public void addDummyPrograms(String name, Integer diskSpace, Double compilationTime, Double installTime, Double delay, Integer programLevel){
-        //colNames = table.getColumnNames();
-        Object[][] data = {{name,diskSpace,compilationTime,installTime,delay,programLevel,0,0,0}};
-
-
+    private void addDummyPrograms(String name, Integer diskSpace, Double compilationTime, Double installTime, Double delay, Integer programLevel){
+        colNames = table.getColumnNames();
+        Object[][] data = {{name,diskSpace,compilationTime,installTime,delay,programLevel,0,0,0},{"Worm", 2,0.2,0.2,0.2,1,0,0,0}};
 
         tableWithListOfPrograms = new JTable(data,colNames);
-        tableWithListOfPrograms.setFillsViewportHeight(true);
+        scrollPane.getViewport().add(tableWithListOfPrograms);
 
-        //scrollPane.add(tableWithListOfPrograms);
     }
 
     public JButton getAddProgramButton(){return bttAddProgram;}

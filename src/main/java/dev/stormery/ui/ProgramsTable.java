@@ -22,5 +22,8 @@ public class ProgramsTable extends JTable{
         tableModel.reload(programs);
     }
 
+    public String[] getColumnNames(){
+        return tableModel.getColNames();
+    }
 
 }

@@ -1,4 +1,6 @@
 dev\stormery\model\Programs.class
 dev\stormery\app\Main.class
 dev\stormery\model\ProgramsLevelTable.class
+dev\stormery\ui\ProgramsTable.class
+dev\stormery\ui\ListOfProgramsFrame.class
 dev\stormery\ui\ProgramsTableModel.class
