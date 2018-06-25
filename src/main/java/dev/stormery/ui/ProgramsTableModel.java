@@ -7,11 +7,24 @@ import java.sql.Timestamp;
 import java.util.List;
 
 /**
- * Created by Stormery on 2018-06-21.
+ * Defines data model for main table<br>
+ * Contains data to make columns:
+ * <ul>
+ *     <li>Name</li>
+ *     <li>Disk Space</li>
+ *     <li>Compilation Time</li>
+ *     <li>Install Time</li>
+ *     <li>Delay</li>
+ *     <li>Program Level</li>
+ *     <li>Strength (DPS)</li>
+ *     <li>Price</li>
+ *     <li>Amount</li>
+ * </ul>
  */
 public class ProgramsTableModel extends AbstractTableModel {
 
    private List<Programs> programs;
+
 
     private String[] colNames = {"Name", "Disk Space", "Compilation Time", "Install Time", "Delay", "Program Level", "Strength (DPS)", "Price", "Amount"};
 
@@ -31,7 +44,7 @@ public class ProgramsTableModel extends AbstractTableModel {
     }
 
     public int getColumnCount() {
-        return 8;
+        return 9;
     }
 
     @Override
@@ -68,8 +81,13 @@ public class ProgramsTableModel extends AbstractTableModel {
         return null;
     }
 
+
     @Override
     public boolean isCellEditable(int rowIndex, int columntIndex){ return false;}
 
     public Programs getProgramAt(int index) {return programs.get(index);}
+
+    public String[] getColNames() {
+        return colNames;
+    }
 }
