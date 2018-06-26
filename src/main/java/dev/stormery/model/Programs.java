@@ -12,7 +12,7 @@ public class Programs {
 
     private Integer diskSpace;
 
-    private Double compilationTime;
+    private Integer compilationTime;
 
     private Double installTime;
 
@@ -29,7 +29,7 @@ public class Programs {
     //switch button
     private Integer amount;
 
-    public Programs(Integer id, String name, Integer diskSpace, Double compilationTime, Double installTime, Double delay, Integer programLevel) {
+    public Programs(Integer id, String name, Integer diskSpace, Integer compilationTime, Double installTime, Double delay, Integer programLevel) {
         this.id = id;
         this.name = name;
         this.diskSpace = diskSpace;
@@ -64,11 +64,11 @@ public class Programs {
         this.diskSpace = diskSpace;
     }
 
-    public Double getCompilationTime() {
+    public Integer getCompilationTime() {
         return compilationTime;
     }
 
-    public void setCompilationTime(Double compilationTime) {
+    public void setCompilationTime(Integer compilationTime) {
         this.compilationTime = compilationTime;
     }
 

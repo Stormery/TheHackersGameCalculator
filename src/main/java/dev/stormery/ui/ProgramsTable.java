@@ -7,7 +7,8 @@ import java.util.List;
 
 
 /**
- * Created by Stormery on 2018-06-22.
+ * The table management class for the program list<br>
+ * Setup data model for JTable
  */
 public class ProgramsTable extends JTable{
 

@@ -8,7 +8,9 @@ import java.awt.*;
 import java.util.List;
 
 /**
- * Main window with GUI components, and manageable table.
+ * Main window with GUI components, and manageable table. <br>
+ * Invoke components, and sets properties for the main application window<br>
+ *
  */
 public class ListOfProgramsFrame extends JFrame{
 
@@ -18,7 +20,6 @@ public class ListOfProgramsFrame extends JFrame{
     private JButton bttAddProgram;
     private JButton bttFindProgram;
     private JButton bttRefreshList;
-    private TableColumn column = null;
 //
     private String[] colNames;
     private JTable tableWithListOfPrograms;
@@ -35,7 +36,7 @@ public class ListOfProgramsFrame extends JFrame{
         setLocationRelativeTo(null);
         setResizable(true);
         setDefaultCloseOperation(EXIT_ON_CLOSE);
-        setSize(950, 500);
+        setSize(800, 500);
         setVisible(true);
     }
 
@@ -50,10 +51,7 @@ public class ListOfProgramsFrame extends JFrame{
         scrollPane.setViewportView(table);
 
 //TODO rozne okna maja miec rozne wymiary
-      for(int i =0; i<= 7; i++){
-          column = table.getColumnModel().getColumn(i);
-          column.setMinWidth(70);
-        }
+
 
         bttAddProgram = new JButton("Add");
         bttAddProgram.setActionCommand("addProgramAction");
@@ -63,7 +61,6 @@ public class ListOfProgramsFrame extends JFrame{
 
         bttRefreshList = new JButton("Refresh");
         bttRefreshList.setActionCommand("refreshProgramAction");
-
 
     }
 
@@ -84,12 +81,30 @@ public class ListOfProgramsFrame extends JFrame{
     private void addDummyPrograms(){
         colNames = table.getColumnNames();
         Object[][] data = {
-                {"Beam",1,20.0,1.0,1.0,0,0,0},
-                {"Worm", 2,0.2,0.2,0.2,1,0,0,0}};
+                {"Beam",1,20,1.0,1.0,1,0,0,0},
+                {"Worm",2,2,0.2,0.2,1,0,0,0}};
 
         tableWithListOfPrograms = new JTable(data,colNames);
         scrollPane.getViewport().add(tableWithListOfPrograms);
+        setupColumnWidth();
+    }
 
+    private void setupColumnWidth() {
+        for(int i =0; i<= 7; i++){
+            switch(i){
+                case 0: tableWithListOfPrograms.getColumnModel().getColumn(i).setPreferredWidth(130); break;
+                case 1: tableWithListOfPrograms.getColumnModel().getColumn(i).setPreferredWidth(60); break;
+                case 2: tableWithListOfPrograms.getColumnModel().getColumn(i).setPreferredWidth(100); break;
+                case 3: tableWithListOfPrograms.getColumnModel().getColumn(i).setPreferredWidth(70); break;
+                case 4: tableWithListOfPrograms.getColumnModel().getColumn(i).setPreferredWidth(30); break;
+                case 5: tableWithListOfPrograms.getColumnModel().getColumn(i).setPreferredWidth(80); break;
+                case 6: tableWithListOfPrograms.getColumnModel().getColumn(i).setPreferredWidth(80); break;
+                case 7: tableWithListOfPrograms.getColumnModel().getColumn(i).setPreferredWidth(30); break;
+
+            }
+
+            tableWithListOfPrograms.setAutoResizeMode(JTable.AUTO_RESIZE_LAST_COLUMN);
+        }
     }
 
     public JButton getAddProgramButton(){return bttAddProgram;}

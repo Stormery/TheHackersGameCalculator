@@ -3,7 +3,9 @@ package dev.stormery.app;
 import dev.stormery.ui.ListOfProgramsFrame;
 
 /**
- * Created by Stormery on 2018-06-21.
+ * Main class that runs the application
+ *
+ *  Created by Stormery
  */
 public class Main {
     public static void main(String[] args){
