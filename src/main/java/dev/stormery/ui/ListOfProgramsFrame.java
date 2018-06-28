@@ -21,14 +21,12 @@ public class ListOfProgramsFrame extends JFrame{
     private JButton bttRefreshList;
 //
     private String[] colNames;
-    private JTable tableWithListOfPrograms;
 //
     public ListOfProgramsFrame(){
         setTitle("The Hackers Game Calculator");
 
         initComponents();
         addComponents();
-        //addDummyPrograms();
 
 
         pack();
@@ -48,6 +46,7 @@ public class ListOfProgramsFrame extends JFrame{
         //Scrolling function for inner table
         scrollPane = new JScrollPane();
         scrollPane.setViewportView(table);
+        setupColumnWidth();
 
         bttAddProgram = new JButton("Add");
         bttAddProgram.setActionCommand("addProgramAction");
@@ -74,32 +73,22 @@ public class ListOfProgramsFrame extends JFrame{
 
     }
 
-    private void addDummyPrograms(){
-        colNames = table.getColumnNames();
-        Object[][] data = {
-                {"Beam",1,20,1.0,1.0,1,0,0,0},
-                {"Worm",2,2,0.2,0.2,1,0,0,0}};
-
-        tableWithListOfPrograms = new JTable(data,colNames);
-        scrollPane.getViewport().add(tableWithListOfPrograms);
-        setupColumnWidth();
-    }
 
     private void setupColumnWidth() {
         for(int i =0; i<= 7; i++){
             switch(i){
-                case 0: tableWithListOfPrograms.getColumnModel().getColumn(i).setPreferredWidth(130); break;
-                case 1: tableWithListOfPrograms.getColumnModel().getColumn(i).setPreferredWidth(60); break;
-                case 2: tableWithListOfPrograms.getColumnModel().getColumn(i).setPreferredWidth(100); break;
-                case 3: tableWithListOfPrograms.getColumnModel().getColumn(i).setPreferredWidth(70); break;
-                case 4: tableWithListOfPrograms.getColumnModel().getColumn(i).setPreferredWidth(30); break;
-                case 5: tableWithListOfPrograms.getColumnModel().getColumn(i).setPreferredWidth(80); break;
-                case 6: tableWithListOfPrograms.getColumnModel().getColumn(i).setPreferredWidth(80); break;
-                case 7: tableWithListOfPrograms.getColumnModel().getColumn(i).setPreferredWidth(30); break;
+                case 0: table.getColumnModel().getColumn(i).setPreferredWidth(130); break;
+                case 1: table.getColumnModel().getColumn(i).setPreferredWidth(60); break;
+                case 2: table.getColumnModel().getColumn(i).setPreferredWidth(100); break;
+                case 3: table.getColumnModel().getColumn(i).setPreferredWidth(70); break;
+                case 4: table.getColumnModel().getColumn(i).setPreferredWidth(30); break;
+                case 5: table.getColumnModel().getColumn(i).setPreferredWidth(80); break;
+                case 6: table.getColumnModel().getColumn(i).setPreferredWidth(80); break;
+                case 7: table.getColumnModel().getColumn(i).setPreferredWidth(30); break;
 
             }
 
-            tableWithListOfPrograms.setAutoResizeMode(JTable.AUTO_RESIZE_LAST_COLUMN);
+            table.setAutoResizeMode(JTable.AUTO_RESIZE_LAST_COLUMN);
         }
     }
 

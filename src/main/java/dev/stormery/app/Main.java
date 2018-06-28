@@ -1,7 +1,6 @@
 package dev.stormery.app;
 
 import dev.stormery.controller.ListOfProgramsController;
-import dev.stormery.ui.ListOfProgramsFrame;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 

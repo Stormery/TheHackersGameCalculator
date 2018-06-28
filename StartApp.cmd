@@ -1,1 +1,1 @@
-java -Dfile.encoding=utf-8 -cp target\TheHackersGameCalculator-1.0.jar dev.stormery.app.Main
+java -Dfile.encoding=utf-8 -cp target\TheHackersGameCalculator.jar dev.stormery.app.Main

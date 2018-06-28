@@ -20,7 +20,7 @@ public class ListOfProgramsController {
 
         getProgramsDAO().init();
         //TODO
-            //getProgramsDAO().dummySave();
+           // getProgramsDAO().dummySave();
 
         refreshTable();
 
