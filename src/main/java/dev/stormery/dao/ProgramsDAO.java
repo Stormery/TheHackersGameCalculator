@@ -14,6 +14,11 @@ public interface ProgramsDAO {
      */
     void init();
 
+    /**
+     * save component to db
+     */
+    void save();
+
     void dummySave();
 
     /**

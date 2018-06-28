@@ -1,0 +1,1 @@
+java -cp target\TheHackersGameCalculator.jar dev.stormery.app.Main

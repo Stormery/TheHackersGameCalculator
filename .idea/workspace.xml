@@ -2,58 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="955405cf-537a-4881-9bf3-177eba229384" name="Default" comment="">
-      <change type="DELETED" beforePath="G:\JAVA_PROJECTS\TheHackersGameCalculator\build\libs\TheHackersGameCalculator.jar" afterPath="" />
-      <change type="DELETED" beforePath="G:\JAVA_PROJECTS\TheHackersGameCalculator\build\reports\tests\test\classes\dev.stormery.AppTest.html" afterPath="" />
-      <change type="DELETED" beforePath="G:\JAVA_PROJECTS\TheHackersGameCalculator\build\reports\tests\test\css\base-style.css" afterPath="" />
-      <change type="DELETED" beforePath="G:\JAVA_PROJECTS\TheHackersGameCalculator\build\reports\tests\test\css\style.css" afterPath="" />
-      <change type="DELETED" beforePath="G:\JAVA_PROJECTS\TheHackersGameCalculator\build\reports\tests\test\index.html" afterPath="" />
-      <change type="DELETED" beforePath="G:\JAVA_PROJECTS\TheHackersGameCalculator\build\reports\tests\test\js\report.js" afterPath="" />
-      <change type="DELETED" beforePath="G:\JAVA_PROJECTS\TheHackersGameCalculator\build\reports\tests\test\packages\dev.stormery.html" afterPath="" />
-      <change type="DELETED" beforePath="G:\JAVA_PROJECTS\TheHackersGameCalculator\build\test-results\test\TEST-dev.stormery.AppTest.xml" afterPath="" />
-      <change type="DELETED" beforePath="G:\JAVA_PROJECTS\TheHackersGameCalculator\build\test-results\test\binary\output.bin" afterPath="" />
-      <change type="DELETED" beforePath="G:\JAVA_PROJECTS\TheHackersGameCalculator\build\test-results\test\binary\output.bin.idx" afterPath="" />
-      <change type="DELETED" beforePath="G:\JAVA_PROJECTS\TheHackersGameCalculator\build\test-results\test\binary\results.bin" afterPath="" />
-      <change type="DELETED" beforePath="G:\JAVA_PROJECTS\TheHackersGameCalculator\build\tmp\jar\MANIFEST.MF" afterPath="" />
-      <change type="DELETED" beforePath="G:\JAVA_PROJECTS\TheHackersGameCalculator\target\MANIFEST.MF" afterPath="" />
-      <change type="DELETED" beforePath="G:\JAVA_PROJECTS\TheHackersGameCalculator\target\TheHackersGameCalculator-1.0.jar" afterPath="" />
-      <change type="DELETED" beforePath="G:\JAVA_PROJECTS\TheHackersGameCalculator\target\classes\META-INF\spring-config.xml" afterPath="" />
-      <change type="DELETED" beforePath="G:\JAVA_PROJECTS\TheHackersGameCalculator\target\classes\dev\stormery\app\Main.class" afterPath="" />
-      <change type="DELETED" beforePath="G:\JAVA_PROJECTS\TheHackersGameCalculator\target\classes\dev\stormery\controller\ListOfProgramsController.class" afterPath="" />
-      <change type="DELETED" beforePath="G:\JAVA_PROJECTS\TheHackersGameCalculator\target\classes\dev\stormery\dao\DatabaseProgramsExtractor.class" afterPath="" />
-      <change type="DELETED" beforePath="G:\JAVA_PROJECTS\TheHackersGameCalculator\target\classes\dev\stormery\dao\ProgramsDAO.class" afterPath="" />
-      <change type="DELETED" beforePath="G:\JAVA_PROJECTS\TheHackersGameCalculator\target\classes\dev\stormery\dao\ProgramsDAOSpring.class" afterPath="" />
-      <change type="DELETED" beforePath="G:\JAVA_PROJECTS\TheHackersGameCalculator\target\classes\dev\stormery\dao\ProgramsRowMapper.class" afterPath="" />
-      <change type="DELETED" beforePath="G:\JAVA_PROJECTS\TheHackersGameCalculator\target\classes\dev\stormery\model\Programs.class" afterPath="" />
-      <change type="DELETED" beforePath="G:\JAVA_PROJECTS\TheHackersGameCalculator\target\classes\dev\stormery\model\ProgramsLevelTable.class" afterPath="" />
-      <change type="DELETED" beforePath="G:\JAVA_PROJECTS\TheHackersGameCalculator\target\classes\dev\stormery\ui\ListOfProgramsFrame.class" afterPath="" />
-      <change type="DELETED" beforePath="G:\JAVA_PROJECTS\TheHackersGameCalculator\target\classes\dev\stormery\ui\ProgramsTable.class" afterPath="" />
-      <change type="DELETED" beforePath="G:\JAVA_PROJECTS\TheHackersGameCalculator\target\classes\dev\stormery\ui\ProgramsTableModel.class" afterPath="" />
-      <change type="DELETED" beforePath="G:\JAVA_PROJECTS\TheHackersGameCalculator\target\classes\log4j.properties" afterPath="" />
-      <change type="DELETED" beforePath="G:\JAVA_PROJECTS\TheHackersGameCalculator\target\maven-archiver\pom.properties" afterPath="" />
-      <change type="DELETED" beforePath="G:\JAVA_PROJECTS\TheHackersGameCalculator\target\maven-status\maven-compiler-plugin\compile\default-compile\createdFiles.lst" afterPath="" />
-      <change type="DELETED" beforePath="G:\JAVA_PROJECTS\TheHackersGameCalculator\target\maven-status\maven-compiler-plugin\compile\default-compile\inputFiles.lst" afterPath="" />
-      <change type="DELETED" beforePath="G:\JAVA_PROJECTS\TheHackersGameCalculator\target\maven-status\maven-compiler-plugin\testCompile\default-testCompile\createdFiles.lst" afterPath="" />
-      <change type="DELETED" beforePath="G:\JAVA_PROJECTS\TheHackersGameCalculator\target\maven-status\maven-compiler-plugin\testCompile\default-testCompile\inputFiles.lst" afterPath="" />
-      <change type="DELETED" beforePath="G:\JAVA_PROJECTS\TheHackersGameCalculator\target\surefire-reports\TEST-dev.stormery.AppTest.xml" afterPath="" />
-      <change type="DELETED" beforePath="G:\JAVA_PROJECTS\TheHackersGameCalculator\target\surefire-reports\dev.stormery.AppTest.txt" afterPath="" />
-      <change type="DELETED" beforePath="G:\JAVA_PROJECTS\TheHackersGameCalculator\target\test-classes\dev\stormery\AppTest.class" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/3.5/fileContent/annotation-processors.bin" afterPath="$PROJECT_DIR$/.gradle/3.5/fileContent/annotation-processors.bin" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/3.5/fileContent/fileContent.lock" afterPath="$PROJECT_DIR$/.gradle/3.5/fileContent/fileContent.lock" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/3.5/taskHistory/fileHashes.bin" afterPath="$PROJECT_DIR$/.gradle/3.5/taskHistory/fileHashes.bin" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/3.5/taskHistory/fileSnapshots.bin" afterPath="$PROJECT_DIR$/.gradle/3.5/taskHistory/fileSnapshots.bin" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/3.5/taskHistory/jvmClassSignatures.bin" afterPath="$PROJECT_DIR$/.gradle/3.5/taskHistory/jvmClassSignatures.bin" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/programs.lck" afterPath="$PROJECT_DIR$/programs.lck" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/3.5/taskHistory/taskHistory.bin" afterPath="$PROJECT_DIR$/.gradle/3.5/taskHistory/taskHistory.bin" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/3.5/taskHistory/taskHistory.lock" afterPath="$PROJECT_DIR$/.gradle/3.5/taskHistory/taskHistory.lock" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/dev/stormery/controller/ListOfProgramsController.java" afterPath="$PROJECT_DIR$/src/main/java/dev/stormery/controller/ListOfProgramsController.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/dev/stormery/ui/ListOfProgramsFrame.java" afterPath="$PROJECT_DIR$/src/main/java/dev/stormery/ui/ListOfProgramsFrame.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/dev/stormery/app/Main.java" afterPath="$PROJECT_DIR$/src/main/java/dev/stormery/app/Main.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/dev/stormery/dao/ProgramsDAO.java" afterPath="$PROJECT_DIR$/src/main/java/dev/stormery/dao/ProgramsDAO.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/StartApp.cmd" afterPath="$PROJECT_DIR$/StartApp.cmd" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build.gradle" afterPath="$PROJECT_DIR$/build.gradle" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pom.xml" afterPath="$PROJECT_DIR$/pom.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/programs.properties" afterPath="$PROJECT_DIR$/programs.properties" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/programs.script" afterPath="$PROJECT_DIR$/programs.script" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/META-INF/spring-config.xml" afterPath="$PROJECT_DIR$/src/main/resources/META-INF/spring-config.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="TheHackersGameCalculator.iws" />
@@ -81,11 +34,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="ProgramsDAO.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="ProgramsDAO.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/dev/stormery/dao/ProgramsDAO.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="527">
-              <caret line="16" column="21" selection-start-line="16" selection-start-column="21" selection-end-line="16" selection-end-column="21" />
+            <state vertical-scroll-proportion="0.4588068" vertical-offset="0" max-vertical-offset="704">
+              <caret line="19" column="14" selection-start-line="19" selection-start-column="14" selection-end-line="19" selection-end-column="14" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -96,9 +49,11 @@
       <file leaf-file-name="ProgramsTableModel.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/dev/stormery/ui/ProgramsTableModel.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="306" max-vertical-offset="1683">
-              <caret line="34" column="42" selection-start-line="34" selection-start-column="42" selection-end-line="34" selection-end-column="42" />
-              <folding />
+            <state vertical-scroll-proportion="0.0" vertical-offset="306" max-vertical-offset="1547">
+              <caret line="23" column="52" selection-start-line="23" selection-start-column="52" selection-end-line="23" selection-end-column="53" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -115,11 +70,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ListOfProgramsFrame.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="ListOfProgramsFrame.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/dev/stormery/ui/ListOfProgramsFrame.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.46875" vertical-offset="571" max-vertical-offset="1904">
-              <caret line="53" column="44" selection-start-line="53" selection-start-column="44" selection-end-line="53" selection-end-column="44" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="51" max-vertical-offset="1904">
+              <caret line="24" column="33" selection-start-line="24" selection-start-column="33" selection-end-line="24" selection-end-column="33" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -145,7 +100,7 @@
         <entry file="file://$PROJECT_DIR$/src/main/java/dev/stormery/dao/ProgramsRowMapper.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="425">
-              <caret line="0" column="25" selection-start-line="0" selection-start-column="25" selection-end-line="0" selection-end-column="25" />
+              <caret line="12" column="13" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -168,8 +123,8 @@
       <file leaf-file-name="pom.xml" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/pom.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="1812" max-vertical-offset="2720">
-              <caret line="21" column="32" selection-start-line="21" selection-start-column="32" selection-end-line="21" selection-end-column="32" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2992">
+              <caret line="75" column="0" selection-start-line="75" selection-start-column="0" selection-end-line="75" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -556,13 +511,13 @@
         <option value="$PROJECT_DIR$/src/main/java/dev/stormery/dao/DatabaseProgramExtractor.java" />
         <option value="$PROJECT_DIR$/src/main/java/dev/stormery/dao/DatabaseProgramsExtractor.java" />
         <option value="$PROJECT_DIR$/src/main/java/dev/stormery/dao/ProgramsRowMapper.java" />
-        <option value="$PROJECT_DIR$/src/main/java/dev/stormery/dao/ProgramsDAO.java" />
         <option value="$PROJECT_DIR$/src/main/java/dev/stormery/dao/ProgramsDAOSpring.java" />
-        <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/main/java/dev/stormery/controller/ListOfProgramsController.java" />
         <option value="$PROJECT_DIR$/src/main/java/dev/stormery/app/Main.java" />
         <option value="$PROJECT_DIR$/src/main/resources/META-INF/spring-config.xml" />
         <option value="$PROJECT_DIR$/src/main/java/dev/stormery/ui/ListOfProgramsFrame.java" />
+        <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/dev/stormery/dao/ProgramsDAO.java" />
       </list>
     </option>
   </component>
@@ -1108,7 +1063,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="2" width="1692" height="1015" extended-state="0" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -1176,7 +1131,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="306" max-vertical-offset="1683">
           <caret line="34" column="42" selection-start-line="34" selection-start-column="42" selection-end-line="34" selection-end-column="42" />
-          <folding />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1270,7 +1227,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="671" max-vertical-offset="1581">
           <caret line="77" column="40" selection-start-line="77" selection-start-column="40" selection-end-line="77" selection-end-column="40" />
-          <folding />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1324,7 +1283,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="204" max-vertical-offset="1377">
           <caret line="12" column="0" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
-          <folding />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1349,13 +1310,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.35726795" vertical-offset="0" max-vertical-offset="571">
           <caret line="14" column="6" selection-start-line="14" selection-start-column="6" selection-end-line="14" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/dev/stormery/model/ProgramsLevelTable.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.49707603" vertical-offset="0" max-vertical-offset="855">
-          <caret line="37" column="0" selection-start-line="37" selection-start-column="0" selection-end-line="37" selection-end-column="0" />
         </state>
       </provider>
     </entry>
@@ -1417,34 +1371,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/dev/stormery/dao/DatabaseProgramsExtractor.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.3404864" vertical-offset="0" max-vertical-offset="699">
-          <caret line="14" column="29" selection-start-line="14" selection-start-column="29" selection-end-line="14" selection-end-column="29" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/dev/stormery/ui/ProgramsTableModel.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="204" max-vertical-offset="1683">
-          <caret line="34" column="42" selection-start-line="34" selection-start-column="42" selection-end-line="34" selection-end-column="42" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/dev/stormery/dao/ProgramsDAO.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="527">
-          <caret line="16" column="21" selection-start-line="16" selection-start-column="21" selection-end-line="16" selection-end-column="21" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/dev/stormery/app/Main.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="442">
@@ -1463,34 +1389,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/dev/stormery/controller/ListOfProgramsController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="748">
-          <caret line="19" column="0" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="1812" max-vertical-offset="2720">
-          <caret line="21" column="32" selection-start-line="21" selection-start-column="32" selection-end-line="21" selection-end-column="32" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/dev/stormery/dao/ProgramsRowMapper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="425">
-          <caret line="0" column="25" selection-start-line="0" selection-start-column="25" selection-end-line="0" selection-end-column="25" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/dev/stormery/dao/ProgramsDAOSpring.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="233" max-vertical-offset="1020">
@@ -1503,10 +1401,84 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2992">
+          <caret line="75" column="0" selection-start-line="75" selection-start-column="0" selection-end-line="75" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/dev/stormery/dao/ProgramsRowMapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="425">
+          <caret line="12" column="13" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/dev/stormery/dao/DatabaseProgramsExtractor.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.3380682" vertical-offset="0" max-vertical-offset="704">
+          <caret line="14" column="29" selection-start-line="14" selection-start-column="29" selection-end-line="14" selection-end-column="29" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/dev/stormery/model/ProgramsLevelTable.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.12073863" vertical-offset="0" max-vertical-offset="704">
+          <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_161/src.zip!/javax/swing/table/AbstractTableModel.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.33238637" vertical-offset="327" max-vertical-offset="5202">
+          <caret line="59" column="22" selection-start-line="59" selection-start-column="22" selection-end-line="59" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/dev/stormery/ui/ProgramsTableModel.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="306" max-vertical-offset="1547">
+          <caret line="23" column="52" selection-start-line="23" selection-start-column="52" selection-end-line="23" selection-end-column="53" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/dev/stormery/ui/ListOfProgramsFrame.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.46875" vertical-offset="571" max-vertical-offset="1904">
-          <caret line="53" column="44" selection-start-line="53" selection-start-column="44" selection-end-line="53" selection-end-column="44" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="306" max-vertical-offset="1904">
+          <caret line="24" column="33" selection-start-line="24" selection-start-column="33" selection-end-line="24" selection-end-column="33" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/dev/stormery/controller/ListOfProgramsController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="748">
+          <caret line="19" column="0" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/dev/stormery/dao/ProgramsDAO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.4588068" vertical-offset="0" max-vertical-offset="704">
+          <caret line="19" column="14" selection-start-line="19" selection-start-column="14" selection-end-line="19" selection-end-column="14" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
