@@ -29,7 +29,8 @@ public class Programs {
     //switch button
     private Integer amount;
 
-    public Programs(Integer id, String name, Integer diskSpace, Integer compilationTime, Double installTime, Double delay, Integer programLevel) {
+    public Programs(Integer id, String name, Integer diskSpace, Integer compilationTime, Double installTime, Double delay, Integer programLevel, Integer strength, Integer price,
+    Integer amount) {
         this.id = id;
         this.name = name;
         this.diskSpace = diskSpace;
@@ -37,6 +38,9 @@ public class Programs {
         this.installTime = installTime;
         this.delay = delay;
         this.programLevel = programLevel;
+        this.strength = strength;
+        this.price = price;
+        this.amount = amount;
     }
 
     //Getters and Setters

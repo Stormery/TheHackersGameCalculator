@@ -28,7 +28,7 @@ public class ProgramsTableModel extends AbstractTableModel {
 
     private String[] colNames = {"Name", "Disk Space", "Compilation Time", "Install Time", "Delay", "Program Level", "Strength (DPS)", "Price", "Amount"};
 
-    private Class<?>[] colTypes = {String.class, Integer.class, Timestamp.class, Timestamp.class, Timestamp.class, Integer.class, Integer.class, Integer.class, Integer.class};
+    private Class<?>[] colTypes = {String.class, Integer.class, Integer.class, Double.class, Double.class, Integer.class, Integer.class, Integer.class, Integer.class};
 
     public ProgramsTableModel(){}
 

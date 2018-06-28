@@ -3,7 +3,6 @@ package dev.stormery.ui;
 import dev.stormery.model.Programs;
 
 import javax.swing.*;
-import javax.swing.table.TableColumn;
 import java.awt.*;
 import java.util.List;
 
@@ -29,7 +28,7 @@ public class ListOfProgramsFrame extends JFrame{
 
         initComponents();
         addComponents();
-        addDummyPrograms();
+        //addDummyPrograms();
 
 
         pack();
@@ -49,9 +48,6 @@ public class ListOfProgramsFrame extends JFrame{
         //Scrolling function for inner table
         scrollPane = new JScrollPane();
         scrollPane.setViewportView(table);
-
-//TODO rozne okna maja miec rozne wymiary
-
 
         bttAddProgram = new JButton("Add");
         bttAddProgram.setActionCommand("addProgramAction");
