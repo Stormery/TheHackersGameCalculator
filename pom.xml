@@ -110,7 +110,7 @@
                         <manifest>
                             <addClasspath>true</addClasspath>
                             <classpathPrefix>lib/</classpathPrefix>
-                            <mainClass>org.hibernate.auction.App</mainClass>
+                            <mainClass>dev.stormery.app.Main</mainClass>
                         </manifest>
                     </archive>
                 </configuration>

@@ -5,22 +5,25 @@ import dev.stormery.ui.ListOfProgramsFrame;
 import org.springframework.context.ApplicationContext;
 
 /**
- * Created by Stormery on 2018-06-26.
+ * Controling unit for overall actions in main panel
  */
 public class ListOfProgramsController {
 
     private ListOfProgramsFrame frame; //Main frame with list of programs
+    private AddProgramsController addProgramsController;
 
     private ApplicationContext context;
 
     public ListOfProgramsController(ApplicationContext context){
         this.context = context;
         this.frame = new ListOfProgramsFrame();
+        this.addProgramsController = new AddProgramsController(this);
+
 
 
         getProgramsDAO().init();
-        //TODO
-           // getProgramsDAO().dummySave();
+        //TODO with Gui
+        addProgramsController.saveProgramAction(this);
 
         refreshTable();
 

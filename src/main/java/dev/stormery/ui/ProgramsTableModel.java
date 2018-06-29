@@ -3,7 +3,6 @@ package dev.stormery.ui;
 import dev.stormery.model.Programs;
 
 import javax.swing.table.AbstractTableModel;
-import java.sql.Timestamp;
 import java.util.List;
 
 /**
