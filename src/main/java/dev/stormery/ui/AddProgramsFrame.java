@@ -42,7 +42,8 @@ public class AddProgramsFrame { //extends JFrame in future
         Integer amount = null;
 
         //DummyAdd without button
-        id = null; //if null it will be new instance in db, if there is value, it will change row
+        id = null;  //if null it will be new instance in db,
+                    // if there is value, it will change given row
         name = "Dummy Program";
         diskSpace = 2;
         compilationTime = 10;

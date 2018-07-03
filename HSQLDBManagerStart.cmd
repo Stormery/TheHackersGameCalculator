@@ -1,0 +1,1 @@
+java -cp target/lib/hsqldb-2.2.8.jar org.hsqldb.util.DatabaseManager

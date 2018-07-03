@@ -71,6 +71,8 @@ public class ListOfProgramsFrame extends JFrame{
 
         add(panel, BorderLayout.SOUTH);
 
+        
+
     }
 
 
