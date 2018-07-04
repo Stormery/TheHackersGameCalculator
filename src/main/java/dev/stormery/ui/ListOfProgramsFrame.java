@@ -16,6 +16,9 @@ public class ListOfProgramsFrame extends JFrame{
     private ProgramsTable table;
 
     private JScrollPane scrollPane;
+
+    private JTextField fieldTotalCosts;
+
     private JButton bttAddProgram;
     private JButton bttFindProgram;
     private JButton bttRefreshList;
@@ -48,6 +51,10 @@ public class ListOfProgramsFrame extends JFrame{
         scrollPane.setViewportView(table);
         setupColumnWidth();
 
+        fieldTotalCosts = new JTextField("Total costs:");
+        fieldTotalCosts.setHorizontalAlignment(JTextField.LEFT);
+
+
         bttAddProgram = new JButton("Add");
         bttAddProgram.setActionCommand("addProgramAction");
 
@@ -65,13 +72,29 @@ public class ListOfProgramsFrame extends JFrame{
     private void addComponents() {
         JPanel panel = new JPanel();
         add(scrollPane);
-        panel.add(bttAddProgram);
-        panel.add(bttFindProgram);
-        panel.add(bttRefreshList);
+
+        JPanel upperPanel = new JPanel();
+        upperPanel.add(fieldTotalCosts);
+
+        JPanel bottomPanel = new JPanel();
+        bottomPanel.add(bttAddProgram);
+        bottomPanel.add(bttFindProgram);
+        bottomPanel.add(bttRefreshList);
+
+        JPanel innerPanel = new JPanel();
+        innerPanel.add(upperPanel);
+        innerPanel.add(bottomPanel);
+        BoxLayout layout = new BoxLayout(innerPanel,BoxLayout.Y_AXIS);
+        innerPanel.setLayout(layout);
+
+
+        panel.add(innerPanel);
 
         add(panel, BorderLayout.SOUTH);
 
-        
+
+
+
 
     }
 

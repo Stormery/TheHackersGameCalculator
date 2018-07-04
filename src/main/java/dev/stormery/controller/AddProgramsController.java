@@ -31,6 +31,7 @@ public class AddProgramsController {
         Programs p = frame.getPrograms();
 
         ProgramsDAO dao = parent.getProgramsDAO();
-        dao.save(p);
+        System.err.println("TODO Save jest zastopowany: " + getClass());
+        //dao.save(p);
     }
 }
