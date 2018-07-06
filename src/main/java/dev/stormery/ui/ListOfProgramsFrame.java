@@ -51,7 +51,7 @@ public class ListOfProgramsFrame extends JFrame{
         scrollPane.setViewportView(table);
         setupColumnWidth();
 
-        fieldTotalCosts = new JTextField("Total costs:");
+        fieldTotalCosts = new JTextField("");
         fieldTotalCosts.setHorizontalAlignment(JTextField.LEFT);
 
 
@@ -73,27 +73,24 @@ public class ListOfProgramsFrame extends JFrame{
         JPanel panel = new JPanel();
         add(scrollPane);
 
-        JPanel upperPanel = new JPanel();
-        upperPanel.add(fieldTotalCosts);
-
         JPanel bottomPanel = new JPanel();
-        bottomPanel.add(bttAddProgram);
-        bottomPanel.add(bttFindProgram);
+        BorderLayout layout = new BorderLayout();
+        bottomPanel.setLayout(new BoxLayout(bottomPanel,BoxLayout.LINE_AXIS));
+
+
+        bottomPanel.add(new JLabel("Total Costs: "));
+        bottomPanel.add(fieldTotalCosts);
+
+        bottomPanel.add(Box.createRigidArea(new Dimension(100,0))); //pusta przestrzen
+        bottomPanel.add(bttAddProgram,BorderLayout.PAGE_END);
+        bottomPanel.add(bttFindProgram,BorderLayout.PAGE_END);
         bottomPanel.add(bttRefreshList);
 
-        JPanel innerPanel = new JPanel();
-        innerPanel.add(upperPanel);
-        innerPanel.add(bottomPanel);
-        BoxLayout layout = new BoxLayout(innerPanel,BoxLayout.Y_AXIS);
-        innerPanel.setLayout(layout);
 
 
-        panel.add(innerPanel);
+        panel.add(bottomPanel);
 
-        add(panel, BorderLayout.SOUTH);
-
-
-
+        add(bottomPanel, BorderLayout.SOUTH);
 
 
     }
