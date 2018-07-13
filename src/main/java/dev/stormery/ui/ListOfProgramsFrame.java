@@ -23,6 +23,11 @@ public class ListOfProgramsFrame extends JFrame{
     private JButton bttFindProgram;
     private JButton bttRefreshList;
 
+    private ImageIcon addIcon;
+    private ImageIcon findIcon;
+    private ImageIcon refreshIcon;
+
+
 
     public ListOfProgramsFrame(){
         setTitle("The Hackers Game Calculator");
@@ -52,14 +57,21 @@ public class ListOfProgramsFrame extends JFrame{
 
         fieldTotalCosts = new Label("15 Test");
 
+        addIcon = new ImageIcon(this.getClass().getResource("/dev/stormery/assets/add.png")); //*
 
         bttAddProgram = new JButton("Add");
+        bttAddProgram.setIcon(addIcon);
         bttAddProgram.setActionCommand("addProgramAction");
 
+
+        findIcon = new ImageIcon(this.getClass().getResource("/dev/stormery/assets/find.png")); //*
         bttFindProgram = new JButton("Find");
+        bttFindProgram.setIcon(findIcon);
         bttFindProgram.setActionCommand("findProgramAction");
 
+        refreshIcon = new ImageIcon(this.getClass().getResource("/dev/stormery/assets/refresh.png")); //*
         bttRefreshList = new JButton("Refresh");
+        bttRefreshList.setIcon(refreshIcon);
         bttRefreshList.setActionCommand("refreshProgramAction");
 
     }
@@ -68,6 +80,7 @@ public class ListOfProgramsFrame extends JFrame{
      * Add initialized components to GUI panel
      */
     private void addComponents() {
+
         JPanel bottomPanel = new JPanel();
         add(scrollPane);
 
@@ -79,7 +92,7 @@ public class ListOfProgramsFrame extends JFrame{
         informationsPanel.add(new JLabel("Total Costs: "));
         informationsPanel.add(fieldTotalCosts);
 
-        buttonsPanel.add(bttAddProgram);
+        buttonsPanel.add(bttAddProgram); //*
         buttonsPanel.add(bttFindProgram);
         buttonsPanel.add(bttRefreshList);
 
