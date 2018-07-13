@@ -17,14 +17,13 @@ public class ListOfProgramsFrame extends JFrame{
 
     private JScrollPane scrollPane;
 
-    private JTextField fieldTotalCosts;
+    private Label fieldTotalCosts;
 
     private JButton bttAddProgram;
     private JButton bttFindProgram;
     private JButton bttRefreshList;
-//
-    private String[] colNames;
-//
+
+
     public ListOfProgramsFrame(){
         setTitle("The Hackers Game Calculator");
 
@@ -51,8 +50,7 @@ public class ListOfProgramsFrame extends JFrame{
         scrollPane.setViewportView(table);
         setupColumnWidth();
 
-        fieldTotalCosts = new JTextField("");
-        fieldTotalCosts.setHorizontalAlignment(JTextField.LEFT);
+        fieldTotalCosts = new Label("15 Test");
 
 
         bttAddProgram = new JButton("Add");
@@ -70,25 +68,24 @@ public class ListOfProgramsFrame extends JFrame{
      * Add initialized components to GUI panel
      */
     private void addComponents() {
-        JPanel panel = new JPanel();
+        JPanel bottomPanel = new JPanel();
         add(scrollPane);
 
-        JPanel bottomPanel = new JPanel();
-        BorderLayout layout = new BorderLayout();
-        bottomPanel.setLayout(new BoxLayout(bottomPanel,BoxLayout.LINE_AXIS));
+        bottomPanel.setLayout(new BorderLayout());
 
+        JPanel informationsPanel = new JPanel();
+        JPanel buttonsPanel = new JPanel();
 
-        bottomPanel.add(new JLabel("Total Costs: "));
-        bottomPanel.add(fieldTotalCosts);
+        informationsPanel.add(new JLabel("Total Costs: "));
+        informationsPanel.add(fieldTotalCosts);
 
-        bottomPanel.add(Box.createRigidArea(new Dimension(100,0))); //pusta przestrzen
-        bottomPanel.add(bttAddProgram,BorderLayout.PAGE_END);
-        bottomPanel.add(bttFindProgram,BorderLayout.PAGE_END);
-        bottomPanel.add(bttRefreshList);
+        buttonsPanel.add(bttAddProgram);
+        buttonsPanel.add(bttFindProgram);
+        buttonsPanel.add(bttRefreshList);
 
+        bottomPanel.add(informationsPanel, BorderLayout.NORTH);
+        bottomPanel.add(buttonsPanel, BorderLayout.CENTER);
 
-
-        panel.add(bottomPanel);
 
         add(bottomPanel, BorderLayout.SOUTH);
 
