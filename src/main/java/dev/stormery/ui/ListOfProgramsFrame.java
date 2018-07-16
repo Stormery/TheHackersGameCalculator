@@ -11,13 +11,15 @@ import java.util.List;
  * Invoke components, and sets properties for the main application window<br>
  *
  */
+//TODO Comments with explanations
 public class ListOfProgramsFrame extends JFrame{
 
     private ProgramsTable table;
 
     private JScrollPane scrollPane;
 
-    private Label fieldTotalCosts;
+    private JLabel fieldTotalCosts;
+    private JLabel totalCostLabel;
 
     private JButton bttAddProgram;
     private JButton bttFindProgram;
@@ -48,6 +50,8 @@ public class ListOfProgramsFrame extends JFrame{
      * Init GUI components for table
      */
     private void initComponents() {
+        //TODO Comments with explanations
+        String totalCostTextField = "Total costs: ";
         table = new ProgramsTable();
 
         //Scrolling function for inner table
@@ -55,7 +59,10 @@ public class ListOfProgramsFrame extends JFrame{
         scrollPane.setViewportView(table);
         setupColumnWidth();
 
-        fieldTotalCosts = new Label("15 Test");
+        //init label with
+        totalCostLabel = new JLabel(totalCostTextField);
+        fieldTotalCosts = new JLabel("15 Test");
+        totalCostLabel.setLabelFor(fieldTotalCosts);
 
         addIcon = new ImageIcon(this.getClass().getResource("/dev/stormery/assets/add.png")); //*
 
@@ -80,8 +87,10 @@ public class ListOfProgramsFrame extends JFrame{
      * Add initialized components to GUI panel
      */
     private void addComponents() {
+    //TODO Comments with explanations
 
         JPanel bottomPanel = new JPanel();
+
         add(scrollPane);
 
         bottomPanel.setLayout(new BorderLayout());
@@ -89,7 +98,7 @@ public class ListOfProgramsFrame extends JFrame{
         JPanel informationsPanel = new JPanel();
         JPanel buttonsPanel = new JPanel();
 
-        informationsPanel.add(new JLabel("Total Costs: "));
+        informationsPanel.add(totalCostLabel);
         informationsPanel.add(fieldTotalCosts);
 
         buttonsPanel.add(bttAddProgram); //*
@@ -105,7 +114,9 @@ public class ListOfProgramsFrame extends JFrame{
 
     }
 
-
+    /**
+     * Setting columns width, so they will fit text, last column autoresize
+     */
     private void setupColumnWidth() {
         for(int i =0; i<= 7; i++){
             switch(i){

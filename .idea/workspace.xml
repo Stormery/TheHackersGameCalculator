@@ -26,20 +26,50 @@
   <component name="DaemonCodeAnalyzer">
     <disable_hints />
   </component>
+  <component name="DockManager">
+    <window id="1">
+      <content type="file-editors">
+        <state>
+          <leaf>
+            <file leaf-file-name="TextSamplerDemo.java" pinned="false" current-in-tab="true">
+              <entry file="file://$PROJECT_DIR$/src/main/java/dev/stormery/app/TextSamplerDemo.java">
+                <provider selected="true" editor-type-id="text-editor">
+                  <state vertical-scroll-proportion="0.51" vertical-offset="459" max-vertical-offset="5253">
+                    <caret line="61" column="26" selection-start-line="61" selection-start-column="8" selection-end-line="61" selection-end-column="26" />
+                    <folding />
+                  </state>
+                </provider>
+              </entry>
+            </file>
+          </leaf>
+        </state>
+      </content>
+    </window>
+  </component>
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FavoritesManager">
     <favorites_list name="TheHackersGameCalculator" />
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="ListOfProgramsFrame.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="ListOfProgramsFrame.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/dev/stormery/ui/ListOfProgramsFrame.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="251" max-vertical-offset="2448">
-              <caret line="50" column="36" selection-start-line="50" selection-start-column="36" selection-end-line="50" selection-end-column="36" />
+            <state vertical-scroll-proportion="0.61731845" vertical-offset="1428" max-vertical-offset="2635">
+              <caret line="110" column="0" selection-start-line="110" selection-start-column="0" selection-end-line="110" selection-end-column="0" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="AddProgramsFrame.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/dev/stormery/ui/AddProgramsFrame.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0" vertical-offset="222" max-vertical-offset="1088">
+              <caret line="45" column="41" selection-start-line="45" selection-start-column="41" selection-end-line="45" selection-end-column="41" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -57,7 +87,7 @@
       <file leaf-file-name="DatabaseProgramsExtractor.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/dev/stormery/dao/DatabaseProgramsExtractor.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="561">
+            <state vertical-scroll-proportion="0.0" vertical-offset="153" max-vertical-offset="561">
               <caret line="14" column="29" selection-start-line="14" selection-start-column="29" selection-end-line="14" selection-end-column="29" />
               <folding />
             </state>
@@ -67,7 +97,7 @@
       <file leaf-file-name="ProgramsRowMapper.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/dev/stormery/dao/ProgramsRowMapper.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="357">
+            <state vertical-scroll-proportion="0.0" vertical-offset="136" max-vertical-offset="357">
               <caret line="12" column="13" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
               <folding />
             </state>
@@ -84,11 +114,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ListOfProgramsController.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="ListOfProgramsController.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/dev/stormery/controller/ListOfProgramsController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.35614526" vertical-offset="0" max-vertical-offset="765">
-              <caret line="17" column="31" selection-start-line="17" selection-start-column="31" selection-end-line="17" selection-end-column="31" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="765">
+              <caret line="25" column="46" selection-start-line="25" selection-start-column="46" selection-end-line="25" selection-end-column="46" />
               <folding />
             </state>
           </provider>
@@ -122,50 +152,7 @@
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0" vertical-offset="2431" max-vertical-offset="15147">
               <caret line="181" column="11" selection-start-line="181" selection-start-column="11" selection-end-line="181" selection-end-column="11" />
-              <folding>
-                <element signature="e#0#33804#0" expanded="false" />
-                <element signature="imports" expanded="false" />
-                <element signature="e#6117#6118#0" expanded="false" />
-                <element signature="e#6152#6153#0" expanded="false" />
-                <element signature="e#6436#6437#0" expanded="false" />
-                <element signature="e#6471#6472#0" expanded="false" />
-                <element signature="e#6952#6953#0" expanded="false" />
-                <element signature="e#6993#6994#0" expanded="false" />
-                <element signature="e#7494#7495#0" expanded="false" />
-                <element signature="e#7535#7536#0" expanded="false" />
-                <element signature="e#9111#9112#0" expanded="false" />
-                <element signature="e#9143#9144#0" expanded="false" />
-                <element signature="e#10390#10391#0" expanded="false" />
-                <element signature="e#10476#10477#0" expanded="false" />
-                <element signature="e#10894#10895#0" expanded="false" />
-                <element signature="e#10936#10937#0" expanded="false" />
-                <element signature="e#12826#12827#0" expanded="false" />
-                <element signature="e#12868#12869#0" expanded="false" />
-                <element signature="e#13036#13037#0" expanded="false" />
-                <element signature="e#13066#13067#0" expanded="false" />
-                <element signature="e#15536#15537#0" expanded="false" />
-                <element signature="e#15593#15594#0" expanded="false" />
-                <element signature="e#17931#17932#0" expanded="false" />
-                <element signature="e#17969#17970#0" expanded="false" />
-                <element signature="e#21676#21677#0" expanded="false" />
-                <element signature="e#21705#21706#0" expanded="false" />
-                <element signature="e#24784#24785#0" expanded="false" />
-                <element signature="e#24820#24821#0" expanded="false" />
-                <element signature="e#25630#25631#0" expanded="false" />
-                <element signature="e#25711#25712#0" expanded="false" />
-                <element signature="e#25988#25989#0" expanded="false" />
-                <element signature="e#26025#26026#0" expanded="false" />
-                <element signature="e#26631#26632#0" expanded="false" />
-                <element signature="e#26664#26665#0" expanded="false" />
-                <element signature="e#26799#26800#0" expanded="false" />
-                <element signature="e#26843#26844#0" expanded="false" />
-                <element signature="e#27007#27008#0" expanded="false" />
-                <element signature="e#27056#27057#0" expanded="false" />
-                <element signature="e#29144#29145#0" expanded="false" />
-                <element signature="e#29187#29188#0" expanded="false" />
-                <element signature="e#29855#29856#0" expanded="false" />
-                <element signature="e#29888#29889#0" expanded="false" />
-              </folding>
+              <folding />
             </state>
           </provider>
         </entry>
@@ -548,8 +535,8 @@
         <option value="$PROJECT_DIR$/src/main/java/dev/stormery/controller/ListOfProgramsController.java" />
         <option value="$PROJECT_DIR$/src/main/java/dev/stormery/ui/AddProgramsFrame.java" />
         <option value="$PROJECT_DIR$/src/main/java/dev/stormery/controller/AddProgramsController.java" />
-        <option value="$PROJECT_DIR$/src/main/java/dev/stormery/ui/ListOfProgramsFrame.java" />
         <option value="$PROJECT_DIR$/src/main/java/dev/stormery/ui/ProgramsTableModel.java" />
+        <option value="$PROJECT_DIR$/src/main/java/dev/stormery/ui/ListOfProgramsFrame.java" />
       </list>
     </option>
   </component>
@@ -899,7 +886,7 @@
       <recent name="G:\JAVA_PROJECTS\TheHackersGameCalculator\src\main\resources\META-INF" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.Main">
+  <component name="RunManager" selected="Application.TextSamplerDemo">
     <configuration default="false" name="App" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
@@ -930,6 +917,23 @@
         </pattern>
       </extension>
       <option name="MAIN_CLASS_NAME" value="dev.stormery.app.Main" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="TheHackersGameCalculator" />
+      <envs />
+      <RunnerSettings RunnerId="Run" />
+      <ConfigurationWrapper RunnerId="Run" />
+      <method />
+    </configuration>
+    <configuration default="false" name="TextSamplerDemo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <option name="MAIN_CLASS_NAME" value="TextSamplerDemo" />
       <option name="VM_PARAMETERS" />
       <option name="PROGRAM_PARAMETERS" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
@@ -1097,14 +1101,16 @@
       <listeners />
       <method />
     </configuration>
-    <list size="2">
+    <list size="3">
       <item index="0" class="java.lang.String" itemvalue="Application.App" />
       <item index="1" class="java.lang.String" itemvalue="Application.Main" />
+      <item index="2" class="java.lang.String" itemvalue="Application.TextSamplerDemo" />
     </list>
     <recent_temporary>
-      <list size="2">
-        <item index="0" class="java.lang.String" itemvalue="Application.Main" />
-        <item index="1" class="java.lang.String" itemvalue="Application.App" />
+      <list size="3">
+        <item index="0" class="java.lang.String" itemvalue="Application.TextSamplerDemo" />
+        <item index="1" class="java.lang.String" itemvalue="Application.Main" />
+        <item index="2" class="java.lang.String" itemvalue="Application.App" />
       </list>
     </recent_temporary>
   </component>
@@ -1128,7 +1134,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1696" height="1026" extended-state="6" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -1140,7 +1146,7 @@
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.16778524" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.16778524" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.26772615" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
@@ -1182,16 +1188,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/dev/stormery/ui/ListOfProgramsFrame.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="51" max-vertical-offset="1904">
-          <caret line="29" column="0" selection-start-line="29" selection-start-column="0" selection-end-line="29" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/dev/stormery/dao/ProgramsDAOSpring.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="255" max-vertical-offset="1462">
@@ -1247,9 +1243,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="544" max-vertical-offset="782">
           <caret line="32" column="35" selection-start-line="32" selection-start-column="35" selection-end-line="32" selection-end-column="35" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1480,13 +1474,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/dev/stormery/ui/AddProgramsFrame.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1122">
-          <caret line="45" column="41" selection-start-line="45" selection-start-column="41" selection-end-line="45" selection-end-column="41" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/dev/stormery/dao/ProgramsDAOSpring.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.29101285" vertical-offset="255" max-vertical-offset="1428">
@@ -1512,50 +1499,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="2193" max-vertical-offset="15181">
           <caret line="181" column="11" selection-start-line="181" selection-start-column="11" selection-end-line="181" selection-end-column="11" />
-          <folding>
-            <element signature="e#0#33804#0" expanded="false" />
-            <element signature="imports" expanded="false" />
-            <element signature="e#6117#6118#0" expanded="false" />
-            <element signature="e#6152#6153#0" expanded="false" />
-            <element signature="e#6436#6437#0" expanded="false" />
-            <element signature="e#6471#6472#0" expanded="false" />
-            <element signature="e#6952#6953#0" expanded="false" />
-            <element signature="e#6993#6994#0" expanded="false" />
-            <element signature="e#7494#7495#0" expanded="false" />
-            <element signature="e#7535#7536#0" expanded="false" />
-            <element signature="e#9111#9112#0" expanded="false" />
-            <element signature="e#9143#9144#0" expanded="false" />
-            <element signature="e#10390#10391#0" expanded="false" />
-            <element signature="e#10476#10477#0" expanded="false" />
-            <element signature="e#10894#10895#0" expanded="false" />
-            <element signature="e#10936#10937#0" expanded="false" />
-            <element signature="e#12826#12827#0" expanded="false" />
-            <element signature="e#12868#12869#0" expanded="false" />
-            <element signature="e#13036#13037#0" expanded="false" />
-            <element signature="e#13066#13067#0" expanded="false" />
-            <element signature="e#15536#15537#0" expanded="false" />
-            <element signature="e#15593#15594#0" expanded="false" />
-            <element signature="e#17931#17932#0" expanded="false" />
-            <element signature="e#17969#17970#0" expanded="false" />
-            <element signature="e#21676#21677#0" expanded="false" />
-            <element signature="e#21705#21706#0" expanded="false" />
-            <element signature="e#24784#24785#0" expanded="false" />
-            <element signature="e#24820#24821#0" expanded="false" />
-            <element signature="e#25630#25631#0" expanded="false" />
-            <element signature="e#25711#25712#0" expanded="false" />
-            <element signature="e#25988#25989#0" expanded="false" />
-            <element signature="e#26025#26026#0" expanded="false" />
-            <element signature="e#26631#26632#0" expanded="false" />
-            <element signature="e#26664#26665#0" expanded="false" />
-            <element signature="e#26799#26800#0" expanded="false" />
-            <element signature="e#26843#26844#0" expanded="false" />
-            <element signature="e#27007#27008#0" expanded="false" />
-            <element signature="e#27056#27057#0" expanded="false" />
-            <element signature="e#29144#29145#0" expanded="false" />
-            <element signature="e#29187#29188#0" expanded="false" />
-            <element signature="e#29855#29856#0" expanded="false" />
-            <element signature="e#29888#29889#0" expanded="false" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1584,16 +1528,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.33238637" vertical-offset="6430" max-vertical-offset="14484">
           <caret line="425" column="0" selection-start-line="425" selection-start-column="0" selection-end-line="425" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/dev/stormery/ui/ListOfProgramsFrame.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="251" max-vertical-offset="2448">
-          <caret line="50" column="36" selection-start-line="50" selection-start-column="36" selection-end-line="50" selection-end-column="36" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1631,9 +1565,35 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/dev/stormery/controller/ListOfProgramsController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.35614526" vertical-offset="0" max-vertical-offset="765">
-          <caret line="17" column="31" selection-start-line="17" selection-start-column="31" selection-end-line="17" selection-end-column="31" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="765">
+          <caret line="25" column="46" selection-start-line="25" selection-start-column="46" selection-end-line="25" selection-end-column="46" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/dev/stormery/ui/AddProgramsFrame.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="222" max-vertical-offset="1088">
+          <caret line="45" column="41" selection-start-line="45" selection-start-column="41" selection-end-line="45" selection-end-column="41" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/dev/stormery/app/TextSamplerDemo.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.51" vertical-offset="459" max-vertical-offset="5253">
+          <caret line="61" column="26" selection-start-line="61" selection-start-column="8" selection-end-line="61" selection-end-column="26" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/dev/stormery/ui/ListOfProgramsFrame.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.61731845" vertical-offset="1428" max-vertical-offset="2635">
+          <caret line="110" column="0" selection-start-line="110" selection-start-column="0" selection-end-line="110" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
