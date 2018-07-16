@@ -90,13 +90,13 @@ public class ListOfProgramsFrame extends JFrame{
     //TODO Comments with explanations
 
         JPanel bottomPanel = new JPanel();
-
         add(scrollPane);
-
-        bottomPanel.setLayout(new BorderLayout());
 
         JPanel informationsPanel = new JPanel();
         JPanel buttonsPanel = new JPanel();
+
+        GridBagLayout gridBag = new GridBagLayout();
+        bottomPanel.setLayout(gridBag);
 
         informationsPanel.add(totalCostLabel);
         informationsPanel.add(fieldTotalCosts);
@@ -105,12 +105,23 @@ public class ListOfProgramsFrame extends JFrame{
         buttonsPanel.add(bttFindProgram);
         buttonsPanel.add(bttRefreshList);
 
-        bottomPanel.add(informationsPanel, BorderLayout.NORTH);
-        bottomPanel.add(buttonsPanel, BorderLayout.CENTER);
+        GridBagConstraints gb = new GridBagConstraints();
+        gb.weightx = 1;
+        gb.weighty = 0;
 
+        /////Information Panel
+        gb.gridx = 0;
+        gb.gridy = 0;
+        gb.anchor = GridBagConstraints.WEST;
+        bottomPanel.add(informationsPanel,gb);
 
-        add(bottomPanel, BorderLayout.SOUTH);
+        /////Buttons Panel
+        gb.gridx = 0;
+        gb.gridy = 0;
+        gb.anchor = GridBagConstraints.CENTER;
+        bottomPanel.add(buttonsPanel,gb);
 
+        add(bottomPanel,BorderLayout.SOUTH);
 
     }
 
