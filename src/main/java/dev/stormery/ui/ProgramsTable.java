@@ -19,12 +19,21 @@ public class ProgramsTable extends JTable{
         setModel(tableModel);
     }
 
+    public Programs getSelectedProgram(){
+        int i = getSelectedRow();
+        if(i<0){
+            return null;
+        }
+        return tableModel.getProgramAt(i);
+    }
+
+
     public void reload(List<Programs> programs){
         tableModel.reload(programs);
     }
 
-    public String[] getColumnNames(){
-        return tableModel.getColNames();
-    }
+//    public String[] getColumnNames(){
+//        return tableModel.getColNames();    not used anymore?
+//    }
 
 }

@@ -29,13 +29,14 @@ public class ListOfProgramsFrame extends JFrame{
     private ImageIcon findIcon;
     private ImageIcon refreshIcon;
 
-
+    private int costs;
 
     public ListOfProgramsFrame(){
         setTitle("The Hackers Game Calculator");
 
         initComponents();
         addComponents();
+        calculateCosts();
 
 
         pack();
@@ -44,6 +45,12 @@ public class ListOfProgramsFrame extends JFrame{
         setDefaultCloseOperation(EXIT_ON_CLOSE);
         setSize(800, 500);
         setVisible(true);
+    }
+
+    private void calculateCosts() {
+
+       //TODO
+       //costs = getAmount * cost
     }
 
     /**
@@ -61,7 +68,8 @@ public class ListOfProgramsFrame extends JFrame{
 
         //init label with
         totalCostLabel = new JLabel(totalCostTextField);
-        fieldTotalCosts = new JLabel("15 Test");
+
+        fieldTotalCosts = new JLabel(costs + " Bits");
         totalCostLabel.setLabelFor(fieldTotalCosts);
 
         addIcon = new ImageIcon(this.getClass().getResource("/dev/stormery/assets/add.png")); //*

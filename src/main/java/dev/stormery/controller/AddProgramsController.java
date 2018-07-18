@@ -25,6 +25,11 @@ public class AddProgramsController {
         dummySave(parent);
     }
 
+    public void show(){
+        frame.setTitle("Add new program");
+        frame.setVisible(true);
+    }
+
     //Exchangable for future button actions
     private void dummySave(ListOfProgramsController parent) {
         //action
