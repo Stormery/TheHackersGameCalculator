@@ -1,10 +1,14 @@
 package dev.stormery.controller;
 
 import dev.stormery.dao.ProgramsDAO;
+import dev.stormery.event.AbstractEvent;
+import dev.stormery.event.AbstractEventListener;
+import dev.stormery.event.AddProgramsEvent;
 import dev.stormery.model.Programs;
 import dev.stormery.ui.ListOfProgramsFrame;
 import org.springframework.context.ApplicationContext;
 
+import javax.swing.*;
 import java.awt.event.MouseAdapter;
 import java.awt.event.MouseEvent;
 
@@ -35,7 +39,7 @@ public class ListOfProgramsController extends AbstractController{
                     log.info("Action: MouseEvent on " + frame.getClass() + " in " +getClass());
                     Programs p = frame.getTable().getSelectedProgram();
                     if(p !=null){
-                        addProgramsController.show();
+                        addProgramsController.show(p);
                     }
                 }
 
@@ -43,9 +47,22 @@ public class ListOfProgramsController extends AbstractController{
         });
 
         /*
-        *Register Event Listeners
-         */
-       // registerEventListener();
+        * -----------------------------------------------------Register Event Listeners
+        */
+
+        // Add Program Event
+        registerEventListener(AddProgramsEvent.class, new AbstractEventListener<AddProgramsEvent>() {
+            @Override
+            public void handleEvent(AddProgramsEvent event) {
+                SwingUtilities.invokeLater(new Runnable() {
+                    @Override
+                    public void run() {
+                        System.err.println("RefreshTable in Add program"); //*
+                        refreshTable();
+                    }
+                });
+            }
+        });
 
 
         //TODO with Gui

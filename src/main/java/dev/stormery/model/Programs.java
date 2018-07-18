@@ -1,5 +1,9 @@
 package dev.stormery.model;
 
+import java.text.NumberFormat;
+import java.text.ParseException;
+import java.util.Locale;
+
 /**
  * Model class, to represents developed programs and their statistics <br>
  */
@@ -29,6 +33,8 @@ public class Programs {
     //switch button
     private Integer amount;
 
+    private static final NumberFormat numberFormat = NumberFormat.getNumberInstance(Locale.ENGLISH);
+
     public Programs(Integer id, String name, Integer diskSpace, Integer compilationTime, Double installTime, Double delay, Integer programLevel, Integer strength, Integer price,
     Integer amount) {
         this.id = id;
@@ -43,6 +49,9 @@ public class Programs {
         this.amount = amount;
     }
 
+    public static double formatStringToDouble(String string) throws ParseException{
+        return numberFormat.parse(string).doubleValue();
+    }
     //Getters and Setters
     public Integer getId() {
         return id;

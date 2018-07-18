@@ -25,8 +25,15 @@ public class AddProgramsController {
         dummySave(parent);
     }
 
+    //----------------------------- Add new Program window
     public void show(){
         frame.setTitle("Add new program");
+        frame.setVisible(true);
+    }
+    //----------------------------- Change Values window
+    public void show(Programs p){
+        frame.changePrograms(p);
+        frame.setTitle("Change program values");
         frame.setVisible(true);
     }
 
