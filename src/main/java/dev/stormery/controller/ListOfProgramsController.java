@@ -21,17 +21,18 @@ public class ListOfProgramsController extends AbstractController{
     private AddProgramsController addProgramsController;
 
     private ApplicationContext context;
-
+//----------------------------------------------------------------------------------------------------------------------
     public ListOfProgramsController(ApplicationContext context){
         this.context = context;
         this.frame = new ListOfProgramsFrame();
         this.frame.addWindowListener(this);
         this.addProgramsController = new AddProgramsController(this);
 
-
+//----------------------------------------------------------------------------------------------------------------------
         /*
         * Mouse Listener
          */
+        //Get values from selected row
         frame.getTable().addMouseListener(new MouseAdapter() {
             @Override
             public void mouseClicked(MouseEvent e) {
@@ -46,6 +47,8 @@ public class ListOfProgramsController extends AbstractController{
             }
         });
 
+
+//----------------------------------------------------------------------------------------------------------------------
         /*
         * -----------------------------------------------------Register Event Listeners
         */

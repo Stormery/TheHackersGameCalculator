@@ -1,8 +1,11 @@
 package dev.stormery.controller;
 
+import dev.stormery.action.*;
+import dev.stormery.action.AbstractAction;
 import dev.stormery.event.AbstractEventListener;
 import org.apache.log4j.Logger;
 
+import javax.swing.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.awt.event.WindowEvent;
@@ -19,11 +22,44 @@ public abstract class AbstractController implements ActionListener, WindowListen
 
     protected static Logger log = Logger.getLogger(AbstractController.class);
 
+    private AbstractController parent;
+
+    private Map<String,AbstractAction> actionsMap = new HashMap<String, AbstractAction>();
+
     private Map<Class<?>, List<AbstractEventListener<?>>> eventListeners =
             new HashMap<Class<?>, List<AbstractEventListener<?>>>();
 
+    public AbstractController(){this(null);}
+
+    /**
+     * ?
+     * @param parent
+     */
+    public AbstractController(AbstractController parent){
+        this.parent= parent;
+    }
+//----------------------------------------------------------------------------------------------------------------------
+   protected void registerAction(AbstractButton sourceButton, AbstractAction action){
+       if(sourceButton.getActionCommand() == null){
+           throw new RuntimeException("Button has no action!");
+       }
+       log.debug("Register action :" + action.getClass().getName() + " for button: " + sourceButton.getText());
+
+       //Adding action to listener
+       sourceButton.addActionListener(this);
+
+       //Map action with ActionCommand
+       this.actionsMap.put(sourceButton.getActionCommand(),action);
+
+   }
+//----------------------------------------------------------------------------------------------------------------------
+    /**
+     * Rejestruje działanie na komponencie
+     * @param eventClass
+     * @param eventListener
+     */
     protected void registerEventListener(Class<?> eventClass, AbstractEventListener<?> eventListener){
-      log.debug("Rejestracje Listenera: " + eventListener + "dla wydarzenia: " + eventClass.getName());
+      log.debug("@Registers Listener: " + eventListener + "for Event: " + eventClass.getName());
         List<AbstractEventListener<?>> listOfListenersForEvent = eventListeners.get(eventClass);
         if(listOfListenersForEvent == null){
             listOfListenersForEvent = new ArrayList<AbstractEventListener<?>>();
@@ -31,11 +67,46 @@ public abstract class AbstractController implements ActionListener, WindowListen
         listOfListenersForEvent.add(eventListener);
         eventListeners.put(eventClass,listOfListenersForEvent);
     }
-    @Override
-    public void actionPerformed(ActionEvent e) {
+//--------------------------------------------Listener actionPerformed--------------------------------------------------
+
+    /**
+     * After getting Action from <code>actionsMap</code> it causes situations related to object which is assigned in its action() method.
+     * @param actionEvent Action performed from a button action
+     */
+    public void actionPerformed(ActionEvent actionEvent) {
+        //TODO wywolanie akcji listenera
+        System.err.println("click");
+
+        try {
+            AbstractButton button = (AbstractButton)actionEvent.getSource();
+            String actionCommand = button.getActionCommand();
+            AbstractAction action = actionsMap.get(actionCommand);
+
+            if(action !=null){
+                log.debug("Loading command: "+ actionCommand + " from: "  +action.getClass());
+                try{
+                    action.actionPerformed();
+                }catch(Exception ex){
+                    exceptionHandler(ex);
+                }
+            }
+
+
+
+        }catch (ClassCastException e){
+            exceptionHandler(new IllegalArgumentException("Action source is not abstract button: " + actionEvent));
+        }
 
     }
-
+//----------------------------------------------------------------------------------------------------------------------
+    /**
+     * Use for popup error if occured
+     */
+    public void exceptionHandler(Exception ex){
+        log.error(ex);
+        JOptionPane.showMessageDialog(null,ex.getMessage(),"Error", JOptionPane.ERROR_MESSAGE);
+    }
+//----------------------------------------------------------------------------------------------------------------------
     /**
      * Method used to release resources loaded by the controller.
      */

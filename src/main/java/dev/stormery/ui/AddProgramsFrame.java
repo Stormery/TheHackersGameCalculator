@@ -8,8 +8,7 @@ import java.awt.event.KeyEvent;
 import java.text.ParseException;
 
 /**
- * AddProgramsFrame is used for manage GUI button for save values to db (not implemented)
- *
+ * AddProgramsFrame is used for manage GUI button to add/save or edit chosen values from db
  */
 public class AddProgramsFrame extends JFrame {
 
@@ -22,6 +21,7 @@ public class AddProgramsFrame extends JFrame {
     private JFormattedTextField tfStrength;
     private JFormattedTextField tfPrice;
     private JFormattedTextField tfAmount;
+
 
     private JButton bttSave;
     private JButton bttCancel;
@@ -129,7 +129,7 @@ public class AddProgramsFrame extends JFrame {
         bttRemove = new JButton("Remove");
         bttRemove.setActionCommand("removeProgramAction");
         bttRemove.setMnemonic(KeyEvent.VK_R);
-        panel.add(bttRemove); // TODO this is during edditing row panel
+        panel.add(bttRemove); // TODO this is during edditing row panel, should be only there
 
         panel.setBorder(BorderFactory.createEmptyBorder(20,0,0,0));
         return panel;
@@ -140,9 +140,9 @@ public class AddProgramsFrame extends JFrame {
     public Programs getPrograms() {
         return loadProgramsFromPanel();
     }
-
+//----------------------------------------------------------------------------------------------------------------------
     /**
-     * creates constructor with values from AddProgramsFrame
+     * Creates constructor with values from AddProgramsFrame
      * @return <code>Programs</code> constructor with loaded values from panel AddProgramsFrame
      */
     private Programs loadProgramsFromPanel() {
@@ -241,23 +241,24 @@ public class AddProgramsFrame extends JFrame {
 //        //
     return new Programs(id, name, diskSpace, compilationTime, installTime, delay, programLevel, strength, price,amount);
 }
-
+//----------------------------------------------------------------------------------------------------------------------
     /**
      * Clears and loads screen fields from list in <code>ListOfPrograms</code>
      * @param p refers to Programs
      */
-    public void changePrograms(Programs p){
+    public void changePrograms(Programs p) {
         //cleanForm();
-        if(p!=null){
+        if (p != null) {
             loadValuesFromTable(p);
             bttRemove.setVisible(true);
 
         }
     }
+//----------------------------------------------------------------------------------------------------------------------
     /**
      * Loads values from table and show it in AddProgramsFrame panel.
      */
-   private void loadValuesFromTable(Programs p){
+   private void loadValuesFromTable(Programs p) {
        tfName.setText(p.getName());
        tfDiscSpace.setValue(p.getDiskSpace());
        tfCompilationTime.setValue(p.getCompilationTime());
@@ -268,5 +269,30 @@ public class AddProgramsFrame extends JFrame {
        tfPrice.setValue(p.getPrice());
        tfAmount.setValue(p.getAmount());
    }
+//----------------------------------------------------------------------------------------------------------------------
+    public void resetForm() {
+        tfName.setText("");
+        tfDiscSpace.setValue(null);
+        tfCompilationTime.setValue(null);
+        tfInstallTime.setValue(null);
+        tfDelay.setValue(null);
+        tfProgramLevel.setValue(null);
+        tfStrength.setValue(null);
+        tfPrice.setValue(null);
+        tfAmount.setValue(null);
+    }
+//---------------Getters ----------------------------------------------------------------------------------------------
+    public JButton getBttSave() {
+        return bttSave;
+    }
+
+    public JButton getBttCancel() {
+        return bttCancel;
+    }
+
+    public JButton getBttRemove() {
+        return bttRemove;
+    }
+
 
 }
