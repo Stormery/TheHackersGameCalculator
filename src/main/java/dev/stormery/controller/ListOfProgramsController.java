@@ -1,5 +1,7 @@
 package dev.stormery.controller;
 
+import dev.stormery.action.*;
+import dev.stormery.action.AbstractAction;
 import dev.stormery.dao.ProgramsDAO;
 import dev.stormery.event.AbstractEvent;
 import dev.stormery.event.AbstractEventListener;
@@ -30,7 +32,7 @@ public class ListOfProgramsController extends AbstractController{
 
 //----------------------------------------------------------------------------------------------------------------------
         /*
-        * Mouse Listener
+         * Mouse Listener
          */
         //Get values from selected row
         frame.getTable().addMouseListener(new MouseAdapter() {
@@ -46,7 +48,15 @@ public class ListOfProgramsController extends AbstractController{
 
             }
         });
+        registerAction(frame.getAddProgramButton(), new AbstractAction() {
+            @Override
+            protected void action() {
+                log.info("Action: Add Button presed on " + frame.getClass() + " in " +getClass());
+                addProgramsController.show();
+            }
+        });
 
+        //TODO addprogram
 
 //----------------------------------------------------------------------------------------------------------------------
         /*

@@ -21,6 +21,7 @@ public class AddProgramsController extends AbstractController {
         //Dodaje zarządzanie dla tego okna
         frame.addWindowListener(this);
 
+//BEGIN----------------------------- Register Buttons Actions ----------------------------------------------------------
         registerAction(frame.getBttCancel(), new AbstractAction() {
             @Override
             protected void action() {
@@ -29,24 +30,27 @@ public class AddProgramsController extends AbstractController {
             }
         });
 
-
+        //TODO register Save Button acion
 
     }
 
     public void saveProgramAction(ListOfProgramsController parent){
         dummySave(parent);
     }
+//END------------------------------- Register Buttons Actions ----------------------------------------------------------
 
-    //----------------------------- Add new Program window -------------------------------------------------------------
-
+//----------------------------- Add new Program window -----------------------------------------------------------------
     /**
-     * No argument method evokes window to add new row
+     * No argument method evokes window to add new row.
+     * CleanUp method is evoked before show up.
      */
     public void show(){
+        cleanUp();
         frame.setTitle("Add new program");
         frame.setVisible(true);
     }
-    //----------------------------- Change Values window ---------------------------------------------------------------
+
+//----------------------------- Change Values window -------------------------------------------------------------------
     /**
      * Method with argument <code>Programs p</code> evokes window after double click on the row<br>
      * Window has one more button <b>Remove</b>  to remove object from the list.
@@ -61,6 +65,7 @@ public class AddProgramsController extends AbstractController {
     protected void cleanUp(){
         frame.setVisible(false);
         frame.resetForm();
+
 
         super.cleanUp();
     }

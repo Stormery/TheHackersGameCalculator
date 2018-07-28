@@ -110,7 +110,7 @@ public abstract class AbstractController implements ActionListener, WindowListen
     /**
      * Method used to release resources loaded by the controller.
      */
-    protected void cleanUp(){}
+    protected void cleanUp(){log.info("CleanUp method");}
 
     @Override
     public void windowClosing(WindowEvent e) {

@@ -243,7 +243,8 @@ public class AddProgramsFrame extends JFrame {
 }
 //----------------------------------------------------------------------------------------------------------------------
     /**
-     * Clears and loads screen fields from list in <code>ListOfPrograms</code>
+     * Clears and loads screen fields from list in <code>ListOfPrograms</code><br>
+     * Sets bttRemove to Visible.
      * @param p refers to Programs
      */
     public void changePrograms(Programs p) {
@@ -270,6 +271,10 @@ public class AddProgramsFrame extends JFrame {
        tfAmount.setValue(p.getAmount());
    }
 //----------------------------------------------------------------------------------------------------------------------
+
+    /**
+     * Clear panels and disable visability of BttRemove
+     */
     public void resetForm() {
         tfName.setText("");
         tfDiscSpace.setValue(null);
@@ -280,6 +285,7 @@ public class AddProgramsFrame extends JFrame {
         tfStrength.setValue(null);
         tfPrice.setValue(null);
         tfAmount.setValue(null);
+        bttRemove.setVisible(false);
     }
 //---------------Getters ----------------------------------------------------------------------------------------------
     public JButton getBttSave() {
