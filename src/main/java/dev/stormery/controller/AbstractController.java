@@ -2,6 +2,7 @@ package dev.stormery.controller;
 
 import dev.stormery.action.*;
 import dev.stormery.action.AbstractAction;
+import dev.stormery.event.AbstractEvent;
 import dev.stormery.event.AbstractEventListener;
 import org.apache.log4j.Logger;
 
@@ -32,7 +33,7 @@ public abstract class AbstractController implements ActionListener, WindowListen
     public AbstractController(){this(null);}
 
     /**
-     * ?
+     *
      * @param parent
      */
     public AbstractController(AbstractController parent){
@@ -59,7 +60,7 @@ public abstract class AbstractController implements ActionListener, WindowListen
      * @param eventListener
      */
     protected void registerEventListener(Class<?> eventClass, AbstractEventListener<?> eventListener){
-      log.debug("@Registers Listener: " + eventListener + "for Event: " + eventClass.getName());
+      log.debug("Registers Listener: " + eventListener + "for Event: " + eventClass.getName());
         List<AbstractEventListener<?>> listOfListenersForEvent = eventListeners.get(eventClass);
         if(listOfListenersForEvent == null){
             listOfListenersForEvent = new ArrayList<AbstractEventListener<?>>();
@@ -91,12 +92,24 @@ public abstract class AbstractController implements ActionListener, WindowListen
                 }
             }
 
-
-
         }catch (ClassCastException e){
             exceptionHandler(new IllegalArgumentException("Action source is not abstract button: " + actionEvent));
         }
 
+    }
+//-------------------------------------------FireEvent------------------------------------------------------------------
+    @SuppressWarnings("unchecked")
+    protected void fireEvent(AbstractEvent<?> event){
+        if(eventListeners.get(event.getClass()) != null){
+            for(AbstractEventListener eventListener : eventListeners.get(event.getClass())){
+                log.debug("Event: " + event.getClass().getName() + " contains Listener: " + eventListeners.getClass().getName());
+                eventListener.handleEvent(event);
+            }
+        }
+        if(parent !=null){
+            log.info("Main Screen gets a list");
+            parent.fireEvent(event);
+        }
     }
 //----------------------------------------------------------------------------------------------------------------------
     /**

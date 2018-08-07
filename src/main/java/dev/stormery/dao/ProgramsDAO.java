@@ -19,8 +19,6 @@ public interface ProgramsDAO {
      */
     void save(Programs programs);
 
-    void dummySave();
-
     /**
      * @return Return list with all programs from database
      */

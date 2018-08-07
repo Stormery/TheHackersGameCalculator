@@ -62,24 +62,25 @@ public class ProgramsDAOSpring implements ProgramsDAO {
             throw new RuntimeException("Program is empty");
         }
         if(p.getId() == null){
+            log.info("Insert : " + saveLog(p));
             jdbcTemplate.update(INSERT_PROGRAM, new Object[]{p.getName(),p.getDiskSpace(),p.getCompilationTime(),p.getInstallTime(),p.getDelay(),p.getProgramLevel(),
                     p.getStrength(),p.getPrice(),p.getAmount()});
         }else{
+            log.info("Updste: " + saveLog(p));
             jdbcTemplate.update(UPDATE_PROGRAM, new Object[]{p.getName(),p.getDiskSpace(),p.getCompilationTime(),p.getInstallTime(),p.getDelay(),p.getProgramLevel(),
                     p.getStrength(),p.getPrice(),p.getAmount(),p.getId()});
         }
 
         log.debug("Program added/updated in the list");
     }
+    private String saveLog(Programs p){
+        return "Programs saved to db:" +
+                "\nName: " + p.getName() +
+                "\nDiscSpace: " + p.getDiskSpace();
+    }
 
     public List<Programs> getAll() {
         log.debug("Return all programs from db");
         return jdbcTemplate.query(GET_ALL_PROGRAMS, new ProgramsRowMapper());
-    }
-
-
-    @Transactional
-    public void dummySave(){
-        jdbcTemplate.update(INSERT_PROGRAM, new Object[]{"Test",1,1,3.0,1.0,1,1,1,1} );
     }
 }

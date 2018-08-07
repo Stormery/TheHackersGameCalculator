@@ -10,12 +10,20 @@ public abstract class AbstractAction {
      */
     protected abstract void action();
 
+    protected void preAction(){}
+
+    /**
+     * Action involved after end of action.
+     */
+    protected void posAction(){}
+
     /**
      * This method is responsible for involving chain action of <code>AbstractAction</code>.
      */
     public final void actionPerformed(){
         try{
             action();
+            posAction();
         }catch(Exception ex){
             actionFailure();
             throw new RuntimeException(ex);

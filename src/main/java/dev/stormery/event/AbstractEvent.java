@@ -12,6 +12,9 @@ public class AbstractEvent<Target> {
         this.target = target;
     }
 
+    /*Informacje które są zapisane w target wracają przy wywołaniu tej metody w
+    ListOfProgramsController
+    */
     public Target getTarget(){
         return target;
     }

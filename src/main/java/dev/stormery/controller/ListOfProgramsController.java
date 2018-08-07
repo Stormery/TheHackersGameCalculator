@@ -24,13 +24,14 @@ public class ListOfProgramsController extends AbstractController{
 
     private ApplicationContext context;
 //----------------------------------------------------------------------------------------------------------------------
+
     public ListOfProgramsController(ApplicationContext context){
         this.context = context;
         this.frame = new ListOfProgramsFrame();
         this.frame.addWindowListener(this);
         this.addProgramsController = new AddProgramsController(this);
 
-//----------------------------------------------------------------------------------------------------------------------
+//BEGIN------------------------------------Register Actions-------------------------------------------------------------
         /*
          * Mouse Listener
          */
@@ -56,12 +57,11 @@ public class ListOfProgramsController extends AbstractController{
             }
         });
 
-        //TODO addprogram
 
-//----------------------------------------------------------------------------------------------------------------------
-        /*
-        * -----------------------------------------------------Register Event Listeners
-        */
+//END--------------------------------------Register Actions-------------------------------------------------------------
+
+//BEGIN---------------------------------Register Event Listeners--------------------------------------------------------
+
 
         // Add Program Event
         registerEventListener(AddProgramsEvent.class, new AbstractEventListener<AddProgramsEvent>() {
@@ -77,7 +77,7 @@ public class ListOfProgramsController extends AbstractController{
             }
         });
 
-
+//END-----------------------------------Register Event Listeners--------------------------------------------------------
         //TODO with Gui
         addProgramsController.saveProgramAction(this);
 

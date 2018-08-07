@@ -1,7 +1,10 @@
 package dev.stormery.controller;
 
 import dev.stormery.action.AbstractAction;
+import dev.stormery.action.BooleanExpression;
+import dev.stormery.action.ConditionalAction;
 import dev.stormery.dao.ProgramsDAO;
+import dev.stormery.event.AddProgramsEvent;
 import dev.stormery.model.Programs;
 import dev.stormery.ui.AddProgramsFrame;
 
@@ -14,7 +17,7 @@ public class AddProgramsController extends AbstractController {
 
     //validation
 
-    public AddProgramsController(ListOfProgramsController parent){
+    public AddProgramsController(final ListOfProgramsController parent){
         super(parent);
         this.frame = new AddProgramsFrame();
 
@@ -30,7 +33,35 @@ public class AddProgramsController extends AbstractController {
             }
         });
 
-        //TODO register Save Button acion
+        registerAction(frame.getBttSave(), ConditionalAction.build()          //TODO zapisywanie dodaje nowy rząd a nie zmienia obecnego
+                .addConditional(new BooleanExpression() {
+
+                    //Test if frames are empty or not
+                    @Override
+                    public boolean conditional() {
+                        //Programs p = frame.getPrograms();
+                        //TODO proper Validation
+
+                        return true;
+                    }
+                })
+                .addAction(new AbstractAction() {
+                    private Programs p;
+
+                    @Override
+                    protected void action() {
+                       p = frame.getPrograms();
+                       ProgramsDAO dao = parent.getProgramsDAO();
+                       dao.save(p);
+                    }
+
+                    @Override
+                    protected void posAction(){
+                        cleanUp();
+                        fireEvent(new AddProgramsEvent(p));
+                        p = null;
+                   }
+                }));
 
     }
 

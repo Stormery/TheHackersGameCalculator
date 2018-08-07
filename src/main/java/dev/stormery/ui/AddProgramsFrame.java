@@ -134,19 +134,22 @@ public class AddProgramsFrame extends JFrame {
         panel.setBorder(BorderFactory.createEmptyBorder(20,0,0,0));
         return panel;
     }
+
+//----------------------------------------------------------------------------------------------------------------------
     /**
      * @return load values from GUI Panel
      */
     public Programs getPrograms() {
         return loadProgramsFromPanel();
     }
-//----------------------------------------------------------------------------------------------------------------------
+
     /**
      * Creates constructor with values from AddProgramsFrame
      * @return <code>Programs</code> constructor with loaded values from panel AddProgramsFrame
      */
     private Programs loadProgramsFromPanel() {
         //TODO Implementation to get values from frame
+        Integer id = null;
 
         String name = null;
         if(!tfName.getText().trim().isEmpty()){
@@ -223,7 +226,7 @@ public class AddProgramsFrame extends JFrame {
             throw new RuntimeException("Exception during parsing field (Integer) in tfAmount");
         }
 
-        Integer id = null;
+
 
 
 //        //DummyAdd without button
