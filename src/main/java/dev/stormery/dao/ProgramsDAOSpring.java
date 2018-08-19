@@ -66,7 +66,7 @@ public class ProgramsDAOSpring implements ProgramsDAO {
             jdbcTemplate.update(INSERT_PROGRAM, new Object[]{p.getName(),p.getDiskSpace(),p.getCompilationTime(),p.getInstallTime(),p.getDelay(),p.getProgramLevel(),
                     p.getStrength(),p.getPrice(),p.getAmount()});
         }else{
-            log.info("Updste: " + saveLog(p));
+            log.info("Update: " + saveLog(p));
             jdbcTemplate.update(UPDATE_PROGRAM, new Object[]{p.getName(),p.getDiskSpace(),p.getCompilationTime(),p.getInstallTime(),p.getDelay(),p.getProgramLevel(),
                     p.getStrength(),p.getPrice(),p.getAmount(),p.getId()});
         }

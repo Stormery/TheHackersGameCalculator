@@ -13,6 +13,7 @@ import java.text.ParseException;
 public class AddProgramsFrame extends JFrame {
 
     private JTextField tfName;
+    private Integer fID;
     private JFormattedTextField tfDiscSpace;
     private JFormattedTextField tfCompilationTime;
     private JFormattedTextField tfInstallTime;
@@ -47,6 +48,7 @@ public class AddProgramsFrame extends JFrame {
         JPanel panel = new JPanel();
         GridBagLayout gb = new GridBagLayout();
         panel.setLayout(gb);
+
 
         GridBagConstraints c = new GridBagConstraints();
 
@@ -148,8 +150,13 @@ public class AddProgramsFrame extends JFrame {
      * @return <code>Programs</code> constructor with loaded values from panel AddProgramsFrame
      */
     private Programs loadProgramsFromPanel() {
-        //TODO Implementation to get values from frame
+
+        //if null it will be new instance in db,
+        //if there is value, it will change given row
         Integer id = null;
+        try{
+            id = fID;
+        }catch (Exception ex){}
 
         String name = null;
         if(!tfName.getText().trim().isEmpty()){
@@ -264,6 +271,7 @@ public class AddProgramsFrame extends JFrame {
      */
    private void loadValuesFromTable(Programs p) {
        tfName.setText(p.getName());
+       fID = p.getId();
        tfDiscSpace.setValue(p.getDiskSpace());
        tfCompilationTime.setValue(p.getCompilationTime());
        tfInstallTime.setValue(p.getInstallTime());
@@ -280,6 +288,7 @@ public class AddProgramsFrame extends JFrame {
      */
     public void resetForm() {
         tfName.setText("");
+        fID = null;
         tfDiscSpace.setValue(null);
         tfCompilationTime.setValue(null);
         tfInstallTime.setValue(null);
