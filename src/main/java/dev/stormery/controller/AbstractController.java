@@ -40,6 +40,12 @@ public abstract class AbstractController implements ActionListener, WindowListen
         this.parent= parent;
     }
 //----------------------------------------------------------------------------------------------------------------------
+
+    /**
+     * Rejestruje działanie na komponencie.
+     * @param sourceButton
+     * @param action
+     */
    protected void registerAction(AbstractButton sourceButton, AbstractAction action){
        if(sourceButton.getActionCommand() == null){
            throw new RuntimeException("Button has no action!");
@@ -55,7 +61,7 @@ public abstract class AbstractController implements ActionListener, WindowListen
    }
 //----------------------------------------------------------------------------------------------------------------------
     /**
-     * Rejestruje działanie na komponencie
+     * Rejestruje odbiornik dla komponentu zgodnego z typem zdarzenia.
      * @param eventClass
      * @param eventListener
      */

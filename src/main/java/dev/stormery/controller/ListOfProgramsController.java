@@ -3,9 +3,7 @@ package dev.stormery.controller;
 import dev.stormery.action.*;
 import dev.stormery.action.AbstractAction;
 import dev.stormery.dao.ProgramsDAO;
-import dev.stormery.event.AbstractEvent;
-import dev.stormery.event.AbstractEventListener;
-import dev.stormery.event.AddProgramsEvent;
+import dev.stormery.event.*;
 import dev.stormery.model.Programs;
 import dev.stormery.ui.ListOfProgramsFrame;
 import org.springframework.context.ApplicationContext;
@@ -49,6 +47,8 @@ public class ListOfProgramsController extends AbstractController{
 
             }
         });
+
+        // Add Button
         registerAction(frame.getAddProgramButton(), new AbstractAction() {
             @Override
             protected void action() {
@@ -57,6 +57,15 @@ public class ListOfProgramsController extends AbstractController{
             }
         });
 
+        //Refresh Button
+        registerAction(frame.getRefreshListButton(), new AbstractAction() {
+            @Override
+            protected void action() {
+                log.info("Action: Refresh Button pressed on " + frame.getClass());
+                fireEvent(new DeleteProgramEvent(null));
+
+            }
+        });
 
 //END--------------------------------------Register Actions-------------------------------------------------------------
 
@@ -77,8 +86,35 @@ public class ListOfProgramsController extends AbstractController{
             }
         });
 
+        //Refresh List Event
+        registerEventListener(ActualizeProgramsEvent.class, new AbstractEventListener<ActualizeProgramsEvent>() {
+            @Override
+            public void handleEvent(ActualizeProgramsEvent event) {
+                SwingUtilities.invokeLater(new Runnable() {
+                    @Override
+                    public void run() {
+                        log.info("Refresh Table in Refresh list event");
+                        refreshTable();
+                    }
+                });
+            }
+        });
+
+        registerEventListener(DeleteProgramEvent.class, new AbstractEventListener<DeleteProgramEvent>() {
+            @Override
+            public void handleEvent(DeleteProgramEvent event) {
+                SwingUtilities.invokeLater(new Runnable() {
+                    @Override
+                    public void run() {
+                        refreshTable();
+                    }
+                });
+
+            }
+        });
+
 //END-----------------------------------Register Event Listeners--------------------------------------------------------
-        addProgramsController.saveProgramAction(this);
+       // addProgramsController.saveProgramAction(this);
 
         getProgramsDAO().init();
         refreshTable();
