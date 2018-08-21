@@ -114,7 +114,6 @@ public class ListOfProgramsController extends AbstractController{
         });
 
 //END-----------------------------------Register Event Listeners--------------------------------------------------------
-       // addProgramsController.saveProgramAction(this);
 
         getProgramsDAO().init();
         refreshTable();

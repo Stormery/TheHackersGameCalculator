@@ -65,9 +65,7 @@ public class AddProgramsController extends AbstractController {
 
     }
 
-    public void saveProgramAction(ListOfProgramsController parent){
-        dummySave(parent);
-    }
+
 //END------------------------------- Register Buttons Actions ----------------------------------------------------------
 
 //----------------------------- Add new Program window -----------------------------------------------------------------
@@ -100,13 +98,5 @@ public class AddProgramsController extends AbstractController {
 
         super.cleanUp();
     }
-    //Exchangable for future button actions
-    private void dummySave(ListOfProgramsController parent) {
-        //action
-        Programs p = frame.getPrograms();
 
-        ProgramsDAO dao = parent.getProgramsDAO();
-        System.err.println("TODO Save jest zastopowany: " + getClass());
-        //dao.save(p);
-    }
 }

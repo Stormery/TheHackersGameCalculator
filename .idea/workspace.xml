@@ -3,12 +3,11 @@
   <component name="ChangeListManager">
     <list default="true" id="955405cf-537a-4881-9bf3-177eba229384" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/programs.lck" afterPath="$PROJECT_DIR$/programs.lck" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/dev/stormery/controller/AbstractController.java" afterPath="$PROJECT_DIR$/src/main/java/dev/stormery/controller/AbstractController.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/dev/stormery/controller/AddProgramsController.java" afterPath="$PROJECT_DIR$/src/main/java/dev/stormery/controller/AddProgramsController.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/dev/stormery/controller/ListOfProgramsController.java" afterPath="$PROJECT_DIR$/src/main/java/dev/stormery/controller/ListOfProgramsController.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/programs.log" afterPath="$PROJECT_DIR$/programs.log" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/programs.properties" afterPath="$PROJECT_DIR$/programs.properties" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/programs.script" afterPath="$PROJECT_DIR$/programs.script" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="TheHackersGameCalculator.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -35,11 +34,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="ListOfProgramsController.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="ListOfProgramsController.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/dev/stormery/controller/ListOfProgramsController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.7592068" vertical-offset="977" max-vertical-offset="2091">
-              <caret line="105" column="59" selection-start-line="105" selection-start-column="59" selection-end-line="105" selection-end-column="59" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="1181" max-vertical-offset="2074">
+              <caret line="116" column="0" selection-start-line="116" selection-start-column="0" selection-end-line="116" selection-end-column="0" />
               <folding>
                 <element signature="e#1873#2124#0" expanded="true" />
                 <element signature="e#2123#2124#0" expanded="true" />
@@ -52,6 +51,7 @@
                 <element signature="e#3749#3750#0" expanded="true" />
                 <element signature="e#3775#3776#0" expanded="true" />
                 <element signature="e#3836#4208#0" expanded="true" />
+                <element signature="e#4015#4181#0" expanded="true" />
                 <element signature="e#4180#4181#0" expanded="true" />
                 <element signature="e#4207#4208#0" expanded="true" />
               </folding>
@@ -96,15 +96,12 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="AddProgramsController.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="AddProgramsController.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/dev/stormery/controller/AddProgramsController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="577" max-vertical-offset="1768">
-              <caret line="67" column="24" selection-start-line="67" selection-start-column="24" selection-end-line="67" selection-end-column="24" />
-              <folding>
-                <element signature="e#2302#2303#0" expanded="true" />
-                <element signature="e#2335#2336#0" expanded="true" />
-              </folding>
+            <state vertical-scroll-proportion="1.4575071" vertical-offset="433" max-vertical-offset="1598">
+              <caret line="100" column="0" selection-start-line="100" selection-start-column="0" selection-end-line="100" selection-end-column="0" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -125,7 +122,7 @@
       <file leaf-file-name="ListOfProgramsFrame.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/dev/stormery/ui/ListOfProgramsFrame.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="2184" max-vertical-offset="2890">
+            <state vertical-scroll-proportion="0.0" vertical-offset="1521" max-vertical-offset="2890">
               <caret line="60" column="52" selection-start-line="60" selection-start-column="52" selection-end-line="60" selection-end-column="52" />
               <folding />
             </state>
@@ -525,13 +522,13 @@
         <option value="$PROJECT_DIR$/src/main/java/dev/stormery/event/AbstractEvent.java" />
         <option value="$PROJECT_DIR$/src/main/java/dev/stormery/action/AbstractAction.java" />
         <option value="$PROJECT_DIR$/src/main/java/dev/stormery/dao/ProgramsDAOSpring.java" />
-        <option value="$PROJECT_DIR$/src/main/java/dev/stormery/controller/AddProgramsController.java" />
         <option value="$PROJECT_DIR$/src/main/java/dev/stormery/ui/AddProgramsFrame.java" />
         <option value="$PROJECT_DIR$/../Multipanel/multipanel/MainFrame.java" />
         <option value="$PROJECT_DIR$/src/main/java/dev/stormery/controller/AbstractController.java" />
         <option value="$PROJECT_DIR$/src/main/java/dev/stormery/event/DeleteProgramEvent.java" />
         <option value="$PROJECT_DIR$/src/main/java/dev/stormery/event/ActualizeProgramsEvent.java" />
         <option value="$PROJECT_DIR$/src/main/java/dev/stormery/controller/ListOfProgramsController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/dev/stormery/controller/AddProgramsController.java" />
       </list>
     </option>
   </component>
@@ -1568,6 +1565,50 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/dev/stormery/event/DeleteProgramEvent.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="340">
+          <caret line="11" column="0" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/dev/stormery/event/ActualizeProgramsEvent.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="306">
+          <caret line="6" column="3" selection-start-line="6" selection-start-column="3" selection-end-line="6" selection-end-column="3" />
+          <folding>
+            <element signature="e#222#223#0" expanded="true" />
+            <element signature="e#246#247#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/dev/stormery/controller/ListOfProgramsController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="1181" max-vertical-offset="2074">
+          <caret line="116" column="0" selection-start-line="116" selection-start-column="0" selection-end-line="116" selection-end-column="0" />
+          <folding>
+            <element signature="e#1873#2124#0" expanded="true" />
+            <element signature="e#2123#2124#0" expanded="true" />
+            <element signature="e#2785#3231#0" expanded="true" />
+            <element signature="e#2960#3205#0" expanded="true" />
+            <element signature="e#3204#3205#0" expanded="true" />
+            <element signature="e#3230#3231#0" expanded="true" />
+            <element signature="e#3324#3776#0" expanded="true" />
+            <element signature="e#3511#3750#0" expanded="true" />
+            <element signature="e#3749#3750#0" expanded="true" />
+            <element signature="e#3775#3776#0" expanded="true" />
+            <element signature="e#3836#4208#0" expanded="true" />
+            <element signature="e#4015#4181#0" expanded="true" />
+            <element signature="e#4180#4181#0" expanded="true" />
+            <element signature="e#4207#4208#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/dev/stormery/controller/AbstractController.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="1278" max-vertical-offset="2227">
@@ -1575,6 +1616,14 @@
           <folding>
             <element signature="e#3991#4021#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/dev/stormery/ui/ListOfProgramsFrame.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="2184" max-vertical-offset="2890">
+          <caret line="60" column="52" selection-start-line="60" selection-start-column="52" selection-end-line="60" selection-end-column="52" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1597,65 +1646,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/dev/stormery/event/DeleteProgramEvent.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="340">
-          <caret line="11" column="0" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/dev/stormery/event/ActualizeProgramsEvent.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="306">
-          <caret line="6" column="3" selection-start-line="6" selection-start-column="3" selection-end-line="6" selection-end-column="3" />
-          <folding>
-            <element signature="e#222#223#0" expanded="true" />
-            <element signature="e#246#247#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/dev/stormery/ui/ListOfProgramsFrame.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="2184" max-vertical-offset="2890">
-          <caret line="60" column="52" selection-start-line="60" selection-start-column="52" selection-end-line="60" selection-end-column="52" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/dev/stormery/controller/AddProgramsController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="577" max-vertical-offset="1768">
-          <caret line="67" column="24" selection-start-line="67" selection-start-column="24" selection-end-line="67" selection-end-column="24" />
-          <folding>
-            <element signature="e#2302#2303#0" expanded="true" />
-            <element signature="e#2335#2336#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/dev/stormery/controller/ListOfProgramsController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.7592068" vertical-offset="977" max-vertical-offset="2091">
-          <caret line="105" column="59" selection-start-line="105" selection-start-column="59" selection-end-line="105" selection-end-column="59" />
-          <folding>
-            <element signature="e#1873#2124#0" expanded="true" />
-            <element signature="e#2123#2124#0" expanded="true" />
-            <element signature="e#2785#3231#0" expanded="true" />
-            <element signature="e#2960#3205#0" expanded="true" />
-            <element signature="e#3204#3205#0" expanded="true" />
-            <element signature="e#3230#3231#0" expanded="true" />
-            <element signature="e#3324#3776#0" expanded="true" />
-            <element signature="e#3511#3750#0" expanded="true" />
-            <element signature="e#3749#3750#0" expanded="true" />
-            <element signature="e#3775#3776#0" expanded="true" />
-            <element signature="e#3836#4208#0" expanded="true" />
-            <element signature="e#4180#4181#0" expanded="true" />
-            <element signature="e#4207#4208#0" expanded="true" />
-          </folding>
+        <state vertical-scroll-proportion="1.4575071" vertical-offset="433" max-vertical-offset="1598">
+          <caret line="100" column="0" selection-start-line="100" selection-start-column="0" selection-end-line="100" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
