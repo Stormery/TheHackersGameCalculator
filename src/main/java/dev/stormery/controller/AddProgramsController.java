@@ -33,12 +33,12 @@ public class AddProgramsController extends AbstractController {
             }
         });
 
-        registerAction(frame.getBttSave(), ConditionalAction.build()          //TODO zapisywanie dodaje nowy rząd a nie zmienia obecnego
-                .addConditional(new BooleanExpression() {
+        registerAction(frame.getBttSave(), ConditionalAction.build()
+                            .addConditional(new BooleanExpression() {
 
-                    //Test if frames are empty or not
-                    @Override
-                    public boolean conditional() {
+                                //Test if frames are empty or not
+                                @Override
+                                public boolean conditional() {
                         //Programs p = frame.getPrograms();
                         //TODO proper Validation
 

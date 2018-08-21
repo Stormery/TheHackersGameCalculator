@@ -78,7 +78,6 @@ public class ListOfProgramsController extends AbstractController{
         });
 
 //END-----------------------------------Register Event Listeners--------------------------------------------------------
-        //TODO with Gui
         addProgramsController.saveProgramAction(this);
 
         getProgramsDAO().init();

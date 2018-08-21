@@ -131,7 +131,7 @@ public class AddProgramsFrame extends JFrame {
         bttRemove = new JButton("Remove");
         bttRemove.setActionCommand("removeProgramAction");
         bttRemove.setMnemonic(KeyEvent.VK_R);
-        panel.add(bttRemove); // TODO this is during edditing row panel, should be only there
+        panel.add(bttRemove);
 
         panel.setBorder(BorderFactory.createEmptyBorder(20,0,0,0));
         return panel;

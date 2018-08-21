@@ -75,9 +75,7 @@ public abstract class AbstractController implements ActionListener, WindowListen
      * @param actionEvent Action performed from a button action
      */
     public void actionPerformed(ActionEvent actionEvent) {
-        //TODO wywolanie akcji listenera
         System.err.println("click");
-
         try {
             AbstractButton button = (AbstractButton)actionEvent.getSource();
             String actionCommand = button.getActionCommand();
